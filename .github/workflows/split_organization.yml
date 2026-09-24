@@ -30,9 +30,20 @@ jobs:
           import pandas as pd
 
           source = Path('data/organization.xlsx')
-          df = pd.read_excel(source, dtype=str, keep_default_na=False)
-          if 'Tipo' not in df.columns:
-              raise SystemExit("Column 'Tipo' not found")
+          raw = pd.read_excel(source, header=None, dtype=str, keep_default_na=False)
+
+          header_row = None
+          for i, row in raw.iterrows():
+              values = {str(v).strip() for v in row.tolist()}
+              if 'Tipo' in values and 'VideoID' in values:
+                  header_row = i
+                  break
+
+          if header_row is None:
+              raise SystemExit("Could not locate the header row containing 'Tipo' and 'VideoID'")
+
+          df = pd.read_excel(source, header=header_row, dtype=str, keep_default_na=False)
+          df.columns = [str(c).strip() for c in df.columns]
 
           tipo = df['Tipo'].astype(str).str.strip().str.lower()
           videos = df[tipo.eq('video')].copy()
@@ -41,9 +52,10 @@ jobs:
           videos.to_csv('data/videos.csv', index=False, encoding='utf-8')
           shorts.to_csv('data/shorts.csv', index=False, encoding='utf-8')
 
-          print(f'videos={len(videos)} shorts={len(shorts)} total={len(df)}')
+          print(f'header_row={header_row} videos={len(videos)} shorts={len(shorts)} total={len(df)}')
           if len(videos) + len(shorts) != len(df):
-              raise SystemExit('Some rows are neither Video nor Short')
+              invalid = sorted(set(tipo) - {'video', 'short'})
+              raise SystemExit(f'Rows with unsupported Tipo values: {invalid}')
           PY
       - name: Replace source workbook with CSV files
         run: |
@@ -54,5 +66,3 @@ jobs:
           git add -A
           git commit -m "Split organization dataset into videos and shorts CSVs"
           git push origin HEAD:split-organization-csv
-
-# Second push triggers this workflow after it already exists on the branch.
