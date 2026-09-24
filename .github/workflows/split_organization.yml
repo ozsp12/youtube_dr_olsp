@@ -44,8 +44,16 @@ jobs:
 
           df = pd.read_excel(source, header=header_row, dtype=str, keep_default_na=False)
           df.columns = [str(c).strip() for c in df.columns]
-
           tipo = df['Tipo'].astype(str).str.strip().str.lower()
+
+          nonempty = tipo.ne('')
+          df = df[nonempty].copy()
+          tipo = tipo[nonempty]
+
+          invalid = sorted(set(tipo) - {'video', 'short'})
+          if invalid:
+              raise SystemExit(f'Rows with unsupported Tipo values: {invalid}')
+
           videos = df[tipo.eq('video')].copy()
           shorts = df[tipo.eq('short')].copy()
 
@@ -53,9 +61,8 @@ jobs:
           shorts.to_csv('data/shorts.csv', index=False, encoding='utf-8')
 
           print(f'header_row={header_row} videos={len(videos)} shorts={len(shorts)} total={len(df)}')
-          if len(videos) + len(shorts) != len(df):
-              invalid = sorted(set(tipo) - {'video', 'short'})
-              raise SystemExit(f'Rows with unsupported Tipo values: {invalid}')
+          if len(videos) != 50 or len(shorts) != 50:
+              raise SystemExit('Unexpected record count')
           PY
       - name: Replace source workbook with CSV files
         run: |
