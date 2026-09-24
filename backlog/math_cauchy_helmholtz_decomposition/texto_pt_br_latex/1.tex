@@ -1,0 +1,418 @@
+\section{Decomposição Linear}
+
+\subsection{Derivada de Frechet}
+
+Um conceito matemático abstrato pode ser interpretado 
+fisicamente, ou geometricamente de diversas maneiras, 
+e dependendo do ponto de vista, e da abordagem, é 
+possível aplicar tais conceitos em diversos problemas 
+físicos, sendo cada abordagem possuidora de uma visão
+peculiar do problema em questão. Tendo isso em mente, 
+é possível interpretar uma função linear $f:\R^n\to\R^m$ 
+de diversas maneiras:
+%
+%
+\begin{enumerate}
+	\item Como um campo de velocidades, no qual $x$ é um 
+	ponto e $f(x)$ é encarada como um deslocamento. Nesse 
+	tipo de abordagem é muito utilizada em fluido dinâmica.
+	\item Como uma deformação, onde $x$ é um ponto, $x + f(x)$ 
+	é um ponto e $f(x)$ é tida como um deslocamento.
+	\item Como um mapeamento, no qual $x$ é um ponto 
+	pertencente a um determinado espaço vetorial, e $f(x)$ 
+	é um ponto em outro espaço vetorial, de forma a termos 
+	uma bijeção $x \mapsto f(x)$
+\end{enumerate}
+%
+Já mostramos que para uma função $f:A\subset\R^n\to\R$, 
+onde A é um aberto, de modo que $f= (f_1,\dotsc,f_m)$, 
+onde $f_i:A\subset\R^n\to\R$ são funções coordenadas de 
+$f$, e $i = 1,\dotsc,n$, de modo que $f_i = f_i(x)$, 
+onde $x = \coordn{x}$, podemos tomar a derivada $Df(x)$ 
+da função $f(x)$, se suas funções coordenadas forem 
+diferenciáveis no aberto A, ou seja, se existirem as 
+derivadas parciais,
+%
+\begin{equation}
+t_{ij} = \deli{f_i}{x_j}(x) = 
+\lim_{t \to 0}\frac{f(x + te_i) - f(x)}{t}.
+\end{equation}
+%
+Definiremos então um campo vetorial $v:\R^n\to\R^n$, 
+de forma que tenhamos a seguinte aproximação linear,
+%
+\begin{equation}
+v(x + x_0) = v(x_0) + \deli{v}{x}(x_0)h + r(x_0,h),
+\end{equation}
+%
+onde a derivada parcial que aparece no lado direito da 
+equação é conhecida por \textit{Derivada de Frechet}
+\index{Derivada de Frechet}:
+%
+\begin{equation}
+Df(a):\R^n\to\R^m \quad \mbox{onde}\quad Df(a)(v) 
+= J_f(a)v,
+\end{equation}
+%
+sendo esta derivada definida como uma transformação 
+linear definida para espaços vetoriais de dimensão 
+finita, e representada em termos de coordenadas pela 
+\textit{Matriz Jacobiana}\index{Matriz Jacobiana} 
+$J_f$, como definido em seções anteriores. Sendo as
+derivadas parciais tomadas em relação à base canônia 
+$\{e_i\}_{i = 1}^{n}$ do $\R^n$,
+%
+\begin{equation}
+\deli{f}{x_i}(a) = Df(a)(e_i) = J_f(a)e_i,
+\end{equation}
+%
+como as derivadas parciais são funções lineares, 
+podemos definir para qualquer vetor $h\in\R^n$, a 
+derivada direcional da função $f$ na direção do 
+vetor $h$,
+%
+\begin{equation}
+Df(a)(h) = \sum_{i = 1}^{n} h_i \deli{f}{x_i}(a),
+\end{equation}
+%
+se todas as derivadas parciais da função $f$ existirem, 
+então ela é dita Frechet diferenciável, mas a recíproca 
+não é verdadeira, pois uma função pode ser Frechet
+diferenciável, mas não possuir derivadas parciais 
+contínuas.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Cauchy-Helmholtz}
+
+
+Em cálculo vetorial, o \textit{Teorema de Helmholtz}
+\index{Teorema de Helmholtz}, também conhecido como 
+\textit{Teorema Fundamental do Cálculo Vetorial}
+\index{Teorema Fundamental do Cálculo Vetorial}, nos 
+diz que para um campo vetorial suave, contínuo e 
+bem comportado, em três dimensões, pode ser definido 
+como a soma de um campo vetorial irrotacional (cujo
+rotacional é nulo) e um campo vetorial solenoidal 
+(cujo divergente é nulo), sendo essa soma conhecida 
+como \textit{Decomposição de Helmholtz}
+\index{Decomposição de Helmholtz}.
+
+\vspace{0.2cm}
+A afirmação acima significa que qualquer campo 
+vetorial bem definido em um aberto pode ser
+representado pela soma de um potencial escalar 
+$\varphi:U\subset\R^3\to\R$ e um vetor
+potencial $A:U\subset\R^3\to\R^3$, de 
+forma que,
+%
+\begin{equation}
+v = - \nabla \varphi + \nabla \times A,
+\end{equation}
+%
+tendo em mãos a Derivada de Frechet e a 
+Decomposição de Helmholtz, tem-se
+%
+\begin{equation}
+\deli{v}{x}(x_0) = \frac{1}{2}\left(\deli{v}{x}(x_0) 
++ \deli{v}{x}^t(x_0)\right) + \frac{1}{2}
+\left(\deli{v}{x}(x_0) - \deli{v}{x}^t(x_0)\right),
+\end{equation}
+%
+temos que o campo vetorial acima foi decomposto 
+em uma soma de matrizes, sendo a primeira parcela 
+do lado direito uma matriz simétrica, e a segunda 
+parcela uma matriz anti-simétrica. De agora em diante, 
+omitiremos o termo $(x_0)$ para não carregar a 
+notação, então desde que seja necessário, será tomado 
+que as derivadas são calculadas neste ponto. Deve-se 
+atentar para o fato também de que a decomposição 
+acima é única, temos então que
+%
+\begin{equation}
+v(x + x_0) = v(x_0) + Sh + Ah + r(x_0,h),
+\end{equation}
+%
+onde S $(S^t - S = 0)$ é a matriz simétrica, 
+e A $(A^t + A = 0)$ é a matriz antisimétrica.
+Fisicamente, o vetor $v(x_0)$ representa uma 
+velocidade de translação, enquanto que a 
+matriz simétrica está intimamente ligada à 
+deformação de um corpo rígido, e a matriz
+anti-simétrica está ligada ao conceito de 
+rotações no $\R^3$.
+
+\vspace{0.2cm}
+Em seções posteriores discutiremos mais a fundo 
+estas matrizes, apenas deixando de aviso que a 
+matriz simétrica, definida como
+%
+\begin{equation}
+S = \frac{1}{2}\left(\deli{v}{x} + 
+\deli{v}{x}^t\right),
+\end{equation}
+%
+nos dá a idéia física de como se comporta o 
+volume de uma região $\Omega_0$ que é deformada, 
+após um certo tempo $t$, em uma região $\Omega_t$, 
+se o volume desta região deformada é aumentado 
+(dilatação), diminuido (contração) ou permanece o 
+mesmo (isometria) em relação àquele. Já a matriz 
+anti-simétrica, definida como:
+%
+\begin{equation}
+A = \frac{1}{2}\left(\deli{v}{x} - 
+\deli{v}{x}^t\right),
+\end{equation}
+%
+nos dá a idéia de rotações no $\R^3$, tendo um 
+produto vetorial associado a ela 
+$\omega\wedge:\R^3\to\R^3$, uma aplicação linear, 
+cujas propriedades podem ser demonstradas. 
+Mostraremos que a matriz $A = \{a_{ij}\}_{3\times3} 
+= [a_{ij}]$, é determinada por apenas três elementos, 
+sendo todos os termos de sua diagonal principal
+iguais a zero:
+%
+\begin{equation}
+A =
+\begin{pmatrix}
+0        & a_{12}   & a_{13}\\
+- a_{12} &  0       & a_{23}\\
+- a_{13} & - a_{23} & 0
+\end{pmatrix},
+\end{equation}
+%
+conhecendo a matriz anti-simétrica A, e multiplicando 
+pela direita, pela sua transposta, temos que 
+$AA^T = - A^2$, matricialmente, temos que
+%
+\begin{equation}
+AA^T =
+\begin{pmatrix}
+(a_{12})^2 + (a_{13})^2 & a_{13}a_{23}   & - a_{12}a_{23}\\
+a_{13}a_{23} &  (a_{12})^2 + (a_{13})^2  & a_{12}a_{13}\\
+- a_{12}a_{23} & a_{12}a_{13} & (a_{12})^2 + (a_{13})^2
+\end{pmatrix},
+\end{equation}
+%
+podemos perceber que o produto de uma matriz anti-simétrica 
+pela sua transposta, pela direita, é uma matriz simétrica, 
+ou seja $- A^2$ é uma matriz simétrica, basta mostrarmos
+que a matriz $B = AA^T$ é simétrica, ou seja, $B^T = B$,
+%
+\begin{equation}
+(AA^T)^T = (A^T)^TA^T = AA^T,
+\end{equation}
+%
+%
+multiplicando a matriz A (anti-simétrica), pela esquerda, 
+pela sua transposta, temos que, $C = A^TA$, primeiramente, 
+notemos que a matriz C é também simétrica,
+%
+\begin{equation}
+(A^TA)^T = A^T(A^T)^T = A^TA,
+\end{equation}
+%
+podemos perceber também que as matrizes B e C são idênticas, 
+e iguais à $- A^2$, 
+%
+\begin{equation}
+AA^T = A^TA = - A^2,
+\end{equation}
+%
+demonstraremos agora que para qualquer matriz M pertencente 
+ao espaço vetorial ${\mathcal M}_{n\times n}(\R)$, das 
+matrizes quadradas de ordem n, sobre o corpo dos reais 
+podem ser decompostas unicamente na soma de uma matriz 
+simétrica S, com uma matriz anti-simétrica A, da seguinte 
+maneira,
+%
+\begin{equation}
+M = \frac{1}{2}(M + M^T) + \frac{1}{2}(M - M^T),
+\end{equation}
+%
+De forma que $S = (M + M^T)/2$ seja uma matriz simétrica 
+e que $A = (M - M^T)/2$ seja uma matriz anti-simétrica. 
+Esse fato pode ser demonstrado diretamente, da seguinte 
+maneira, para a matriz S,
+%
+\begin{equation}
+S^T = \frac{1}{2}(M^T + M)^T 
+= \frac{1}{2}(M + M^T)
+= S,
+\end{equation}
+%
+e da mesma maneira, mostraremos que a matriz A é 
+anti-simétrica,
+%
+\begin{equation}
+A^T = \frac{1}{2}(M - M^T)^T
+= \frac{1}{2}(M^T - M)  
+= - A
+\end{equation}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Rotações}
+
+No espaço vetorial ${\mathcal M}_{n\times n}(\R)$ das 
+matrizes quadradas de ordem n, com entradas reais, 
+cada vetor neste espaço vetorial possui $n^2$ elementos 
+(entradas da matriz), por construção, uma matriz 
+anti-simétrica $(A^T = - A)$ possui os termos da diagonal 
+identicamente nulos, pois como o traço de uma matriz é 
+invariante, e o traço da transposta é igual ao traço da 
+mesma, então estes termos precisam ser nulos.
+
+\vspace{0.2cm}
+Como a matriz é anti-simétrica, os termos de entrada fora 
+da diagonal principal possuem anti-simetria em relação à 
+esta diagonal. Como temos n termos na diagonal principal, 
+e já sabemos que eles são nulos, temos então $n^2 - n$ 
+termos fora da diagonal principal, mas como estes termos 
+são iguais, dois a dois, a menos de um sinal, então 
+precisamos determinar apenas $(n^2 - n)/2$ termos $a_{ij}$ 
+d matriz antissimétrica $A = [a_{ij}]$.
+
+\vspace{0.2cm}
+Na busca de um isomorfismo natural entre o espaço das matrizes 
+${\mathcal M}_{n\times n}(\R)$ e o $\R^n$, encontramos que,
+%
+\begin{equation}
+\frac{n^2 - n}{2} = n \ \to \ n = 0 \quad \text{ou} 
+\quad n = 3,
+\end{equation}
+%
+dessa maneira temos que além do espaço vetorial trivial, 
+o único isomorfismo natural para $n\neq 0$ seria o espaço 
+real de três dimensões, o $\R^3$. Dessa maneira, temos um 
+vetor velocidade angular, $\omega = (a_{12},a_{13},a_{23})$.
+
+\vspace{0.2cm}
+Mostraremos agora, como determinar uma matriz anti-simétrica, 
+$A = [a_{ij}]_{3\times 3}$. Temos a seguinte propriedade 
+$A^T = - A$, de forma a termos a seguinte relação entre as
+entradas da matriz, $a_{ij} = - a_{ji}$,
+%
+\begin{equation} 
+A = - A^T 
+\ \to \
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13}       \\
+a_{21} & a_{22} & a_{23}       \\
+a_{31} & a_{32} & a_{33}
+\end{pmatrix} 
+=
+\begin{pmatrix}
+- a_{11} & - a_{21} & - a_{31} \\
+- a_{12} & - a_{22} & - a_{32} \\
+- a_{13} & - a_{23} & - a_{33}
+\end{pmatrix},
+\end{equation}
+%
+de forma que tenhamos três equações para $i = j$, e que, 
+$a_{ii} = - a_{ii} \to a_{ii} = 0$, isso nos diz que os 
+termos da diagonal principal são identicamente nulos.
+Para os termos fora da diagonal, isto é, para $i\neq j$, 
+temos que $a_{ij} = - a_{ji}$, mostrando que precisamos 
+apenas de três termos para determinar uma matriz 
+anti-simétrica:
+%
+\begin{equation}
+A = - A^T 
+\ \to \ 
+A =
+\begin{pmatrix}
+0        &   a_{12} & a_{13}  \\
+- a_{12} &   0      & a_{23}  \\
+- a_{13} & - a_{23} & 0
+\end{pmatrix}
+\end{equation}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\subsection{Vetor de Darboux}
+
+
+Partindo de um operador ortogonal, de forma que tenhamos satisfeita 
+a seguinte relação $PP^T = I$, onde os operatodes são funções do 
+parâmetro $t$, derivando em relação à este parâmetro dos dois lados 
+da relação de ortogonalidade, temos que:
+%
+\begin{equation}
+\deri{}{t}(PP^T) = \deri{P}{t}P^T + 
+P\deri{P}{t}^T = 0,
+\end{equation}
+%
+rearrumando a relação, e multiplicando pela direita pelo 
+operador P, temos que,
+%
+\begin{equation}
+\deri{P}{t} = \left(- P\deri{P}{t}^T\right)P = AP,
+\end{equation}
+%
+notando que a matriz A definida como $A = P(-dP^T/dt)$ é 
+antissimétrica, isso pode ser notado, se definirmos como 
+variável auxiliar que $B = - dP^T/dt$, de forma que 
+tenhamos que $A = PB$, e lembrando que,
+%
+\begin{equation}
+\deri{P}{t}P^T + P\deri{P}{t}^T = B^TP^T + PB 
+= (PB)^T + PB = 0,
+\end{equation}
+%
+dessa maneira mostramos que $(PB)^T = - PB$. Utilizando 
+a relação $A = PB$, e tomando sua transposta, dos dois 
+lados, temos que,
+%
+\begin{equation}
+A^T = (PB)^T = - PB = - A,
+\end{equation}
+%
+demonstramos assim que o operador $A = P(-dP^T/dt)$ 
+é antissimétrico.
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Produto Vetorial como Operador Linear}
+
+Seja um operador linear, $A:\R^3\to\R^3$. Para todo 
+$u,v\in\R^3$, sendo u, um vetor fixo, de coordenadas 
+$u = (a,b,c)$, podemos definir, de maneira que, para 
+qualquer vetor, $v = (x,y,z)$, tenhamos a seguinte 
+transformação linear,
+%
+\begin{equation}
+A(v) = u \times v = (bz - cy,cx - az,ay - bx)
+\end{equation}
+%
+a representação matricial, na base canônica do $\R^3$, 
+deste operador, é
+%
+\begin{equation} 
+[A] =
+\begin{pmatrix}
+0   & -c & b     \\
+c   &  0 & - a   \\
+- b & a  & 0
+\end{pmatrix}
+\end{equation}

@@ -1,0 +1,362 @@
+\section{Mapeamentos Lineares}
+
+
+\subsection{Derivadas Parciais}
+
+Seja $f:U\to\R$ uma função definida no aberto $U\subset\R^n$. 
+Para cada $i = 1,\dotsc,n$, a i-ésima derivada parcial de $f$ 
+no ponto $a = \coordn{a}\subset U$ é o número:
+%
+
+\[
+\deli{f}{x_i}(a) = \lim_{t \to 0} 
+\frac{f(a + te_i) - f(a)}{t}
+\]
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Derivadas de Mapeamentos}
+
+Onde $e_i$ é o i-ésimo vetor da base canônica do $\R^n$. 
+A notação acima $\partial f/\partial x_i$ significa a 
+derivada da função $f$ em relação à sua i-ésima 
+variável.
+
+
+Como o conjunto U é um aberto, é possível encontrarmos 
+$\epsilon > 0$ tal que $(a + te_i)\in U$, para todo 
+$t\in (-\epsilon,\epsilon)$, de forma que esteja definido 
+o caminho retilíneo $\lambda:(-\epsilon,\epsilon)\to U$, 
+de forma que $\lambda(t) = a + te_i$. Temos então a função 
+composta $(f\circ\lambda)(t)$, de modo que a derivada da 
+função $f$ no ponto $x = a$, seja a derivada da função 
+composta $(f\circ\lambda)(t)$, no ponto $t = 0$.
+%
+\[
+f\circ\lambda:(-\epsilon,\epsilon)\to\R \quad 
+\therefore \quad (f\circ\lambda)'(0) =
+\deli{f}{x_i}(a)
+\]
+%
+Podemos definir uma função diferenciável de n variáveis, 
+como uma transformação linear tal que:
+%
+\[
+f:\R^n\to\R^m \qquad f = (f_1(x),\dotsc,f_m(x))
+\]
+%
+Onde $x = \coordn{x}$, ou seja, as funções $f_i:\R^n\to\R$ 
+são funções (funcionais) coordenadas da função $f$. As 
+derivadas parciais das funções coordenadas $\partial
+f_i/\partial x_j$ são definidas como anteriormente, 
+onde $i = 1,\dotsc,m$ e $j = 1,\dotsc,n$.
+%
+\[
+\deli{f_i}{x_j}(x) = \lim_{t \to 0} 
+\frac{f(x + te_i) - f(x)}{t}
+\]
+%
+Onde $x = \coordn{x}$, ou seja, podemos definir a 
+derivada da função $f:A\subset\R^n\to\R^m$ como uma 
+matriz $Df(x)$, de forma que se as funções coordenadas
+estiverem bem definidas e forem diferenciáveis em 
+um aberto $U\subset\R^n$, então a matriz $Df(x)$ é 
+para as bases canônicas do $\R^n$ e $\R^m$, definida 
+da seguinte maneira:
+%
+\[
+Df(x) =
+\begin{pmatrix}
+\partial f_1/\partial x_1 & \dotsc & \partial f_1/\partial x_n \\
+\partial f_2/\partial x_1 & \dotsc & \partial f_2/\partial x_n \\
+\vdots & \vdots &  \vdots\\
+\partial f_m/\partial x_1 & \dotsc & \partial f_m/\partial x_n
+\end{pmatrix}
+\]
+
+A matriz acima é a matriz jacobiana de $f(x)$, e 
+$Df(x)$ é a derivada total desta função. Um exemplo 
+bem concreto é quando fazemos $m = 1$, de forma 
+que tenhamos $f:A\subset\R^n\to\R$, de maneira 
+que a matriz $Df(x)$ seja:
+%
+\[
+Df(x) = \left(\deli{f}{x_1} , \dotsc , 
+\deli{f}{x_n}\right)
+\]
+
+A relação acima é também conhecida pelo gradiente 
+da função $f:A\subset\R^n\to\R$, tendo a representação 
+$\nabla f$. A definição de  $Df(x)$ como uma 
+transformação linear independe da base utilizada, 
+e quando aplicada a um vetor $v = \coordn{a}$, temos
+%
+\[
+Df(x)\cdot v = \sum_{i = 1}^{n}\deli{f}{x_i}a_i
+\]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Exemplos}
+
+\exemplo{1}
+
+Seja $f:A\subset\R^3\to\R^2$, definida por 
+$f(x,y) = (x^2,x^3y,x^4y^2)$, onde $f_1(x,y) =
+x^2$, $f_2(x,y) = x^3y$ e $f_3(x,y) = x^4y^2$, 
+então sua derivada total é dada por
+%
+\[
+Df =
+\begin{pmatrix}
+\partial f_1/\partial x & f_1/\partial y\\
+\partial f_2/\partial x & f_2/\partial y\\
+\partial f_3/\partial x & f_3/\partial y
+\end{pmatrix} =
+\begin{pmatrix}
+2x      & 0 \\
+3x^3y   & x^3 \\
+4x^3y^2 & 2x^4y
+\end{pmatrix}
+\]
+
+
+\exemplo{2}
+
+Seja a função $f:\R^2\to\R^2$ dada por 
+$f = (f_1,f_2)$, onde temos que 
+$f_1:\R^2\to\R$ é dada por 
+$f_1(x,y) = y + e^{x + y}$ e 
+$f_2:\R^2\to\R$ é dada por 
+$f_2(x,y) = y^2x$, temos que
+%
+\[
+Df =
+\begin{pmatrix}
+\partial f_1/\partial x & f_1/\partial y\\
+\partial f_2/\partial x & f_2/\partial y
+\end{pmatrix} =
+\begin{pmatrix}
+e^{x + y} & 1 + e^{x + y}\\
+y^2       & 2yx
+\end{pmatrix}
+\]
+
+
+
+\exemplo{3}
+
+Seja $f:\R^3\to\R$ onde temos que $f(x,y,z) = xe^y$, 
+neste caso em particular temos que $Df = \nabla f$, 
+ou seja, ao calcularmos a matriz jacobiana, temos 
+o gradiente da $f$:
+%
+\[
+Df = \nabla f = \left(e^y , xe^y\right)
+\]
+
+
+
+\exemplo{4}
+
+Seja $f:\R^3\to\R^2$, dada por $f(x,y,z) = (ze^x,ye^z)$, 
+temos que,
+%
+\[
+Df =
+\begin{pmatrix}
+ze^x &  0    & e^x   \\
+0    &  e^z  & ye^z
+\end{pmatrix}
+\]
+
+
+\exemplo{5}
+
+Seja $f:\R^2\to\R$, dada por $f(x,y) = e^{xy} + \sin(xy)$, 
+então temos que,
+%
+\[
+Df = \nabla f = (e^{xy} + \cos(xy))(y,x)
+\]
+
+
+\exemplo{6}
+
+Um exemplo bem conhecido seria o de qualquer função 
+na reta real $f:\R\to\R$, nesse caso teríamos apenas 
+um número, e não uma matriz jacobiana. Calcularemos 
+por exemplo, a derivada de $f(x) = \tan x$,
+%
+\[
+f(x) = \tan x \ \to \ Df = \sec^2x
+\]
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Diferenciabilidade}
+
+A derivada tomada em um determinado ponto $x_0$, 
+de forma que podemos afirmar que a função $f(x)$ 
+é diferenciável no ponto $x = x_0$ se existir,
+%
+\[
+\lim_{x\to x_0}\frac{\|f(x) - f(x_0) 
+- T(x - x_0)\|}{\|x - x_0\|} = 0
+\]
+%
+Onde $T = Df(x_0)$ é a matriz $m\times n$ de coeficientes 
+$t_{ij} = \partial f_i/\partial x_j$, sendo a derivada 
+de $f(x)$ calculada no ponto $x = x_0$. E a relação 
+$T(x - x_0)$ significa o produto matricial entre T, 
+e o matriz $n \times 1$ (vetor coluna)  $x - x_0$.
+
+Tomando $h = x - x_0$, para m = 1, temos que 
+$f:A\subset\R^n\to\R$ é uma função à valores
+reais, de n variáveis, é diferenciável no 
+ponto $x = x_0$, se for satisfeita:
+%
+\[
+\lim_{h\to 0}\frac{1}{\|h\|}\left|f(x_0 + h) - f(x_0) - \sum_{i =
+1}^{n}h_j\deli{f}{x_i}(x_0)\right|
+\]
+%
+Onde $h_j = x_j - x_0$, e o termo do somatório 
+na relação acima, é $Th$.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Operadores Diferenciais}
+
+
+Um operador diferencial é definido matematicamente 
+como uma função do operador diferenciação, esse 
+objeto matemático apesar de abstrato, possui muitas 
+aplicações, pois ao tratar uma operação matemática 
+como uma função do tipo $f:E\to F$ em dois espaços
+vetoriais genéricos, ao aplicarmos esta função em 
+um vetor $x\in E$, obtemos um novo vetor
+$y = f(x)$, pertencente ao espaço vetorial F.
+
+Os operadores diferenciais podem ser lineares e 
+não-lineares, sendo uma classe bem ampla
+de funções. Abaixo, alguns exemplos de operadores:
+
+
+\begin{enumerate}
+	\item A derivada de Frechet é um operador linear, 
+	tendo as seguintes notações:
+	%
+	\[\partial_{x_i} = \deli{}{x_i} = D_i\]
+	%
+	Sendo este operador a derivada parcial em relação a 
+	i-ésima coordenada $x_i$. Definiremos a derivada de 
+	Frechet matematicamente, da seguinte maneira, sendo uma função
+$f:\R^n\to\R^m$.
+  %
+  \[
+  D f:\R^n\to{\mathcal M}_{m\times n} 
+  \qquad x \mapsto \partial_xf
+  \]
+	%
+	O operador Df é a matriz jacobiana da função 
+	$f(x) = (f_1,\dotsc,f_m)$, onde temos o vetor 
+	$x = \coordn{x}$, e $f_i:\R^n\to\R$ são as 
+	funções (funcionais) coordenadas de $f$, onde 
+	$i = 1,\dotsc,m$, e de forma geral, temos que:
+	%
+	\[
+	Df = \begin{pmatrix}
+	\partial_{x_1}f_1 & \dotsc & \partial_{x_n}f_1  \\
+	\vdots            & \vdots & \vdots             \\
+	\partial_{x_1}f_m & \dotsc & \partial_{x_n}f_m  
+	\end{pmatrix}
+	\]
+	%
+	Um exemplo em dimensões específicas (e baixas) 
+	dessa aplicação seria para a seguinte função 
+	$f:\R^2\to\R^2$, dada por $f(x,y) = (f_1,f_2)$, 
+	onde $f_i:\R^2\to\R$ são as funções coordenadas 
+	do campo vetorial. Temos então que 
+	$Df:\R^2\to{\mathcal M}_{2\times 2}$, o operador 
+	Df é dado pela seguinte matriz $2\times 2$,
+	%
+	\[
+	Df = 
+	\begin{pmatrix} 
+	\partial_xf_1 & \partial_yf_1 \\ 
+	\partial_xf_2 & \partial_yf_2
+	\end{pmatrix}
+	\]
+	%
+	Para não ficar apenas no abstrato, podemos ilustrar 
+	de forma concreta, calculando a matriz Df para os 
+	seguintes funcionais $f_1(x,y) = \sin(xy)$ e 
+	$f_2(x,y) = xy$. 
+	\item O gradiente de um vetor em três dimensões (tensor, 
+	para $n > 3$). Para uma função $\varphi:\R^n\to\R$, 
+	temos que,
+	%
+	%
+	\[
+	\nabla\varphi:\R^n\to{\mathcal M}_{1\times n} 
+	\sim \R^n \qquad x\mapsto \nabla\varphi
+	\]
+	%
+	%
+	A relação ${\mathcal M}_{1\times n} \sim \R^n$ é dita 
+	um isomorfismo natural entre estes dois espaços vetoriais. 
+	Para um vetor $x\in\R^n$, sendo $x = \coordn{x}$, temos o
+  seguinte funcional $\varphi(x)$, de forma a termos a 
+  seguinte aplicação $x\mapsto\nabla\varphi$. Utilizando o 
+  isomorfismo natural entre o espaço das matrizes linha, e o 
+  espaço de n dimensões, encontramos que:
+	%
+	%
+	\[
+	\nabla\varphi(x) = \left(\deli{\varphi}{x_1}, 
+	\dotsc,\deli{\varphi}{x_n} \right)
+	\]
+	%
+	%
+	\item O divergente de um vetor, que resulta em um número 
+	(escalar). Este operador é um funcional, ou seja, uma 
+	aplicação bilinear do tipo $L:\R^n\to\R$, de forma que, 
+	$L(x) = \langle L,x\rangle$. Temos para uma função 
+	(funcional) $f:\R^n\to\R$ que o divergente é uma aplicação 
+	linear $x\mapsto\diverg(f)$, sendo definido operacionalmente,
+	%
+	%
+	\[
+	\diverg(f) = \frac{1}{2}\traco\left(\deli{f}{x} 
+	+ \deli{f}{x}^T\right)
+	\]
+	%
+	%
+	\item O rotacional de um campo vetorial $f:\R^n\to\R^m$, 
+	é a aplicação (linear) definida como $\rotac(f):\R^n \to 
+	{\mathcal A}_{n}(\R)$, onde ${\mathcal A}_{n}(\R)$ é o 
+	espaço vetorial das matrizes (quadradas) anti simétricas 
+	com entradas reais. O rotacional de um campo vetorial 
+	possui uma característica interessante para um espaço 
+	vetorial real de três dimensões, isso devido ao 
+	isomorfismo natural entre os espaços ${\mathcal A}_{n}
+	(\R)$ e $\R^n$, pelo teorema do núcleo e imagem, devemos 
+	ter que a dimensão dos dois espaços sejam iguais, como o 
+	espaço das matrizes anti simétricas possui dimensão igual 
+	à $(n^2 -  n)/2$, ao igualarmos com as n dimensões do 
+	$\R^n$, encontramos duas soluções $n = 0$ ou $n = 3$, 
+	temos então que ${\mathcal A}_{3}(\R) \sim \R^3$,
+	%
+	%
+	\[
+	\rotac(f) = \frac{1}{2}\left(\deli{f}{x} 
+	- \deli{f}{x}^T\right)
+	\]
+\end{enumerate}
+
+
