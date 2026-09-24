@@ -54,3 +54,5 @@ jobs:
           git add -A
           git commit -m "Split organization dataset into videos and shorts CSVs"
           git push origin HEAD:split-organization-csv
+
+# Second push triggers this workflow after it already exists on the branch.
