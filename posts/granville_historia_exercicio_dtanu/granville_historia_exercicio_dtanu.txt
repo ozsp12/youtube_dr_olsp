@@ -1,0 +1,26 @@
+O livro do autor Granville [1, 2] foi um dos que usei quando comecei a estudar cálculo diferencial e integral.
+
+Sou natural de Belém do Pará e, durante muitos anos, frequentei sebos à procura de livros de matemática e física. Foi assim que encontrei obras que fizeram parte da minha formação, entre elas, o livro de problemas de Demidovich [3], o curso de cálculo de Piskunov [4] e o de Granville.
+
+Naquele período, na década de 1990, e no início dos anos 2000, muitas dessas obras não eram fáceis de encontrar em livrarias. Os sebos funcionavam como uma fonte importante para quem procurava edições antigas, traduções soviéticas e livros já fora de circulação comercial.
+
+Uma situação recorrente me chamava a atenção. Alguns exemplares encontrados nos sebos de Belém ainda apresentavam carimbos, números de tombo e marcas de bibliotecas da Universidade Federal do Pará. Entre eles havia livros de matemática e de física que já eram difíceis de encontrar. Essas marcas indicavam que os exemplares haviam pertencido, em algum momento, ao acervo institucional. Eu não conhecia o percurso que os havia levado até os sebos, mas a presença desses registros sempre me pareceu relevante do ponto de vista da preservação bibliográfica.
+
+A imagem deste post mostra uma página de uma edição antiga do Granville, com a dedução da derivada da função tangente.
+
+Essa abordagem do cálculo diferencial, por meio de infinitésimos e do uso dos diferenciais como números, é uma forma antiga de ensinar cálculo. 
+
+O texto é curto, a sequência da dedução é explícita e os resultados anteriores são usados diretamente no desenvolvimento. Comparar edições antigas com livros atuais permite acompanhar as mudanças na notação, na organização dos conteúdos e no nível de detalhe empregado nas demonstrações.
+
+Parte da minha formação inicial em matemática ocorreu com livros comprados em sebos. Por isso, considero essas obras também documentos da história do ensino científico e da circulação de conhecimento entre diferentes gerações.
+
+
+Referências
+
+[1] GRANVILLE, W. A.; SMITH, P. F. Elements of the Differential and Integral Calculus. Boston: Ginn and Company, 1904.
+
+[2] GRANVILLE, W. A.; SMITH, P. F.; LONGLEY, W. R. Elementos de Cálculo Diferencial e Integral. Tradução de J. Abdelhay. 3. ed. Editora Científica, 1961.
+
+[3] DEMIDOVICH, B. P. Problemas e Exercícios de Análise Matemática. Moscou: Mir.
+
+[4] PISKUNOV, N. S. Cálculo Diferencial e Integral. Moscou: Mir.
