@@ -1,0 +1,665 @@
+Tipo,VideoID,Project,Origem,Tema,Título YouTube/Ideia,Descrição,Publicação,Duração,YouTube ID,Status,arXiv/SSRN,Journal,Research Gate,YouTube,TikTok,LinkedIn,Newsletter LinkedIn,Substack,GitHub Project,Oz.io,Oz Site,Curso,arXiv/SSRN (link),Journal (link),Research Gate (link),YouTube (link),TikTok (link),LinkedIn (link),Newsletter LinkedIn (link),Substack (link),GitHub Project.1,Oz.io (link),Oz Site (link),Curso (link)
+Video,001,mathematics,youtube,Álgebra,Resolvendo equação polinomial de quarta ordem e demonstrando um teorema de redução de ordem,Neste primeiro vídeo da série sobre raciocínio matemático: resolvo uma equação polinomial do quarto grau para um caso particular e desenvolvo um algoritmo para reduzir o grau desse polinômio pela metade através de uma substituição de variáveis.,2025-03-20,00:24:48,jdkhDn97CMA,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=jdkhDn97CMA,-------,-------,-------,-------,-------,-------,-------,-------
+Video,002,mathematics,youtube,Álgebra,"Resolvendo (polinômios): x³ + px + q é divisível por (x-a)², encontre a relação entre p e q.","Resolvendo o seguinte problema:
+
+f(x) = x³ + px + q é divisível por (x-a)²
+
+Encontre a relação entre p e q.",2025-12-15,00:25:23,RDFBAXc1P9E,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=RDFBAXc1P9E,-------,-------,-------,-------,-------,-------,-------,-------
+Video,003,data_science,youtube,Análise de dados,"Como visualizar dados longitudinais: linhas, heatmaps e painéis","Neste vídeo, há uma apresentação com alguns exemplos de gráficos para visualizar dados em painel (dados longitudinais). 
+
+Arquivo pdf com a aula:
+https://github.com/ozsp12/ai_data_citizen/blob/main/dados_em_painel/tipos_graficos_dados_em_painel.pdf
+
+00:00 Introdução – Importância das visualizações
+00:40 Tipos de gráficos e estrutura do exemplo
+01:09 Boas práticas e considerações de design
+01:55 Gráfico de barras por mês do ano
+02:57 Gráfico de barras empilhado
+03:32 Gráfico de barras por produto
+04:03 Gráfico de área
+04:25 Gráfico de linha
+04:51 Mapa de calor (Heatmap)",2025-10-20,00:05:56,Etwy8F1cmzA,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=Etwy8F1cmzA,-------,-------,-------,-------,-------,-------,-------,-------
+Video,004,data_science,youtube,Análise de dados,"""Quick and dirty"": análise de dados com Python - Precificação e elasticidade.","Neste vídeo, inicio uma série que vou chamar de “Quick and Dirty”, na qual apresento ferramentas de análise de dados para responder rapidamente a perguntas de negócio, usando modelos matemáticos e estatísticos de forma menos rigorosa. A famosa regra 80–20 entre rigor e valor gerado: 20% de rigor e 80% de valor gerado. Como prometido, além de ensinar Python, vou procurar compartilhar algumas ferramentas matemáticas, estatísticas e de análise de dados que conheço, bem como conceitos teóricos de diversas áreas, como microeconomia, macroeconomia, séries temporais, pesquisa operacional, entre outras.
+
+Jupyter Notebook:
+https://github.com/ozsp12/ai_data_citizen/tree/main/quick_dirty_analytics
+
+GitHub  (Introdução à Programação):
+https://github.com/ozsp12/programacao_introducao/tree/main",2025-12-31,00:40:04,Vn45DCpdXNw,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=Vn45DCpdXNw,-------,-------,-------,-------,-------,-------,-------,-------
+Video,005,data_science,youtube,Análise de dados,"Aula ""trilha rápida do analista de dados"": exemplos de funções (Python, SQL e DAX) muito utilizadas.","Neste vídeo, eu ensino como utilizar algumas funções de Python, SQL e DAX (Power BI), úteis e amplamente utilizadas no dia a dia de um analista de dados. A ideia é proporcionar uma aula para que cidadãos dos dados se familiarizem com a linguagem de programação de alto nível, a manipulação de dados, os bancos de dados e as visualizações.
+
+Link do Notebook e PBIX no GitHub:
+https://github.com/ozsp12/ai_data_citizen/tree/main/fast_track
+
+SQL:
+SELECT
+FROM
+WHERE
+ORDER BY
+SUM(), COUNT(), AVG()
+GROUP BY
+CREATE, INSERT, DELETE
+
+Python (pandas):
+import pandas as pd
+pd.read_csv()
+df.head()
+df.tail()
+df.info()
+df.describe()
+df['coluna']
+df[df['coluna'] ""maior que"" x]
+df.groupby()
+df.sort_values()
+df.isnull().sum()
+df.fillna()
+df.dropna()
+
+DAX (Power BI):
+CALCULATE()
+FILTER()
+ALL()
+SUM()
+COUNT()
+DIVIDE()
+IF()
+SWITCH()
+VALUES()
+RELATED()",2026-01-07,01:09:31,dLDmXewxwpA,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=dLDmXewxwpA,-------,-------,-------,-------,-------,-------,-------,-------
+Video,006,mathematics,youtube,Análise matemática,Derivative of the exponential function via the limit definition,"In this video, we derive the exponential function from first principles using the limit definition of the derivative. Starting with $f(x)=a^x$, we examine the increment of the function, reorganize the expression algebraically, and obtain the derivative step by step in a clear and rigorous way. This derivation is a classic result of differential calculus and helps deepen understanding of exponential functions and their role in mathematics. This video is intended for students and anyone interested in: calculus, limits, derivatives, exponential functions, and mathematical reasoning.
+
+References
+[1] Stewart, J. Calculus: Early Transcendentals. 8th ed., Cengage Learning, 2016.
+[2] Hass, J. R., Heil, C. E., Weir, M. D., and Bogacki, P. Thomas’ Calculus: Early Transcendentals, SI Units. 15th ed., Pearson, 2023.
+[3] Spivak, M. Calculus. 4th ed., Publish or Perish, Inc., 2008.
+[4] Apostol, T. M. Calculus, Volume 1: One-Variable Calculus, with an Introduction to Linear Algebra. 2nd ed., John Wiley & Sons, 1991.
+[5] Strang, G. Calculus. 2nd ed., Wellesley-Cambridge Press, 2010.
+
+#Calculus #Derivative #ExponentialFunction #Mathematics #Limits #MathEducation",2026-04-23,00:06:56,RBGLS71u6wI,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=RBGLS71u6wI,-------,-------,-------,-------,-------,-------,-------,-------
+Video,007,mathematics,youtube,Análise matemática,Why the Gradient Is Orthogonal to Level Surfaces,"In this video, I present a visual explanation of the relationship between linear algebra and differential calculus: vectors orthogonal to the same nonzero vector lie in the same plane. In R³, given a non-zero vector c, the set of all vectors x such that the inner product between x and c is equal to zero forms a two-dimensional vector subspace. Geometrically, this subspace is a plane perpendicular to the vector c. Thus, if three vectors u, v, and w simultaneously satisfy:
+
+[u , c] = 0,  
+[v , c] = 0,  
+[w , c] = 0.
+
+where [ , ] denotes the usual inner product. Then all three belong to the same plane, perpendicular to c. Since this plane has dimension 2, three vectors contained in it cannot be linearly independent. Therefore, u, v, and w are necessarily linearly dependent. This idea arises naturally in geometry and differential calculus.
+
+When we have a level surface, that is, a surface defined by the points at which a function g(x, y, z) assumes a constant value, any curve contained in that surface preserves this value along its path. By differentiating this condition using the chain rule, we obtain that the inner product between the gradient of g and the tangent vector to the curve is zero. In other words, the tangent vector to the curve is orthogonal to the gradient of the function. Hence, the gradient points in the normal direction to the level surface.
+
+At the intersection of two level surfaces, the intersection curve has a tangent vector that is simultaneously orthogonal to both gradients. For this reason, this tangent vector is parallel to the cross product of the gradients of the two functions.
+
+References
+
+[1] Apostol, T. M. (1969). Calculus, Volume II: Multi-variable calculus and linear algebra, with applications to differential equations and probability (2nd ed.). John Wiley & Sons.
+[2] Axler, S. (2015). Linear algebra done right (3rd ed.). Springer.
+[3] do Carmo, M. P. (1976). Differential geometry of curves and surfaces. Prentice-Hall.
+[4] Hoffman, K., & Kunze, R. (1971). Linear algebra (2nd ed.). Prentice-Hall.
+[5] Lee, J. M. (2013). Introduction to smooth manifolds (2nd ed.). Springer.
+[6] Marsden, J. E., & Tromba, A. J. (2003). Vector calculus (5th ed.). W. H. Freeman.
+[7] Spivak, M. (1965). Calculus on manifolds: A modern approach to classical theorems of advanced calculus. W. A. Benjamin.
+[8] Strang, G. (2016). Introduction to linear algebra (5th ed.). Wellesley-Cambridge Press.",2026-05-14,00:09:04,E-RCxwW9PBw,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=E-RCxwW9PBw,-------,-------,-------,-------,-------,-------,-------,-------
+Video,008,mathematics,youtube,Análise matemática,Por que o gradiente é perpendicular às superfícies de nível?,"Neste vídeo, organizei uma explicação visual sobre a relação entre álgebra linear e cálculo diferencial: vetores ortogonais a um mesmo vetor não nulo pertencem ao mesmo plano.  Em R³, dado um vetor c não nulo, o conjunto de todos os vetores x tais que o produto escalar entre x e c é igual a zero forma um subespaço vetorial de dimensão 2. Geometricamente, esse subespaço é um plano perpendicular ao vetor c. Assim, se três vetores u, v e w satisfazem simultaneamente:  
+
+[u , c] = 0,  [v , c] = 0,  [w , c] = 0.  
+
+Sendo [ , ] o produto escalar usual. Então, os três pertencem ao mesmo plano, perpendicular a c. Como esse plano tem dimensão 2, três vetores nele não podem ser linearmente independentes. Portanto, u, v e w são necessariamente linearmente dependentes. Essa ideia surge naturalmente na geometria e no cálculo diferencial.  
+
+Quando temos uma superfície de nível, isto é, uma superfície definida pelos pontos em que uma função g(x, y, z) assume um valor constante, qualquer curva contida nessa superfície mantém esse valor ao longo de seu trajeto. Ao derivar essa condição pela regra da cadeia, obtemos que o produto escalar entre o gradiente de g e o vetor tangente à curva é nulo. Em outras palavras, o vetor tangente à curva é ortogonal ao gradiente da função. Logo, o gradiente aponta na direção normal à superfície de nível.  
+
+No caso da interseção de duas superfícies de nível, a curva de interseção possui um vetor tangente que é simultaneamente ortogonal a ambos os gradientes. Por isso, esse vetor tangente é paralelo ao produto vetorial dos gradientes das duas funções.
+
+Referências
+[1] Apostol, T. M. (1969). Calculus, Volume II: Multi-variable calculus and linear algebra, with applications to differential equations and probability (2nd ed.). John Wiley & Sons.
+[2] Axler, S. (2015). Linear algebra done right (3rd ed.). Springer.
+[3] do Carmo, M. P. (1976). Differential geometry of curves and surfaces. Prentice-Hall.
+[4] Hoffman, K., & Kunze, R. (1971). Linear algebra (2nd ed.). Prentice-Hall.
+[5] Lee, J. M. (2013). Introduction to smooth manifolds (2nd ed.). Springer.
+[6] Marsden, J. E., & Tromba, A. J. (2003). Vector calculus (5th ed.). W. H. Freeman.
+[7] Spivak, M. (1965). Calculus on manifolds: A modern approach to classical theorems of advanced calculus. W. A. Benjamin.
+[8] Strang, G. (2016). Introduction to linear algebra (5th ed.). Wellesley-Cambridge Press.",2026-05-08,00:11:13,jMSWzqKGbBs,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=jMSWzqKGbBs,-------,-------,-------,-------,-------,-------,-------,-------
+Video,009,mathematics,youtube,Análise matemática,Benderama: banach-tarski machine and quantum Bender. Explanation of the harmonic series divergence.,"Neste vídeo, uso o episódio 17 da sexta temporada de Futurama, “Benderama”, para explicar a série harmônica e demonstrar por que ela é divergente. No episódio, o Professor Farnsworth apresenta uma expressão matemática para calcular a massa total acumulada dos Benders ao longo de sucessivos processos de duplicação. Embora a massa individual de cada cópia diminua rapidamente, o número de Benders cresce exponencialmente. Ao simplificar a expressão, obtém-se a série harmônica, cuja soma cresce indefinidamente.
+
+
+00:00 Introdução: matemática em *Futurama*
+00:26 Trecho do episódio “Benderama”
+01:39 O paradoxo de Banach–Tarski e a premissa do episódio
+04:20 A equação apresentada pelo Professor Farnsworth
+06:29 Dedução da massa dos Benders
+13:47 Da soma das massas à série harmônica
+15:29 Por que a série é divergente
+17:09 Número de Benders, massa individual e efeitos subatômicos
+20:22 Encerramento
+
+link para apresentação do vídeo e  para o notebook Jupyter com o código que gera os gráficos apresentados no vídeo: https://github.com/ozsp12/math_elementary/tree/main/futurama_banach_tarski
+
+Referências
+1. OpenStax, Calculus, Volume 2 (OpenStax, Rice University, Houston, 2016), Secs. 5.2–5.3.
+2. S. Abbott, Understanding Analysis, 2nd ed. (Springer, New York, 2015).
+3. T. M. Apostol, Mathematical Analysis: A Modern Approach to Advanced Calculus, 2nd ed. (Addison-Wesley, Reading, MA, 1974).
+4. W. Rudin, Principles of Mathematical Analysis, 3rd ed. (McGraw-Hill, New York, 1976).
+5. G. B. Folland, Real Analysis: Modern Techniques and Their Applications, 2nd ed. (Wiley, New York, 1999).
+6. G. Tomkowicz and S. Wagon, The Banach–Tarski Paradox, 2nd ed. (Cambridge University Press, Cambridge, 2016).
+7. S. Banach and A. Tarski, “Sur la décomposition des ensembles de points en parties respectivement congruentes,” Fund. Math. 6, 244–277 (1924).
+8. K. Buchhorn, “The Banach–Tarski Paradox,” arXiv:2108.05714 (2021).
+9. S. Singh, Os Segredos Matemáticos dos Simpsons (Record, Rio de Janeiro, 2016).",2025-03-24,00:20:37,zb1tEaJ2yFc,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=zb1tEaJ2yFc,-------,-------,-------,-------,-------,-------,-------,-------
+Video,010,mathematics,youtube,Análise matemática,Questão Dissertativa do IME de 2026: uma demonstração que engana muita gente. Desafiadora!,"Neste vídeo, resolvo a questão 8 do segundo dia do exame do IME 2025/2026. A questão parece desafiadora, mas, na verdade, é bastante simples; ainda assim, ela esconde vários conceitos interessantes, que são discutidos ao longo do vídeo. Como o teorema do ponto fixo de Banach (1922).
+
+Exames do IME
+https://inscricoes.ime.eb.br/cfg/
+
+Link para a prova de Matemática do IME
+https://inscricoes.ime.eb.br/documentos/Prova_Discursiva_de_Matem%C3%A1tica.pdf
+
+Link para paper pedagógico sobre a resolução (em inglês)
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6779078
+
+0:00 Introdução e apresentação da questão
+0:19 Enunciado do problema
+0:30 Por que a questão parece mais difícil do que é
+2:31 Definição do seno hiperbólico
+3:15 Resolvendo a equação para obter o arco-seno hiperbólico
+6:24 Identificação da expressão logarítmica
+7:29 Reescrevendo o sistema com uma função auxiliar
+9:16 Ideia de ponto fixo
+11:17 Interpretação por sequência iterativa
+13:19 Consequência: x = y = z
+14:35 Prova da unicidade da solução
+17:35 Demonstração por contradição
+20:34 Comentário final sobre o valor conceitual da questão
+22:00 Encerramento",2025-12-29,00:22:29,oY2PUGaeMuw,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=oY2PUGaeMuw,-------,-------,-------,-------,-------,-------,-------,-------
+Video,011,mathematics,youtube,Análise matemática,Desigualdade de Cauchy–Schwarz: uma demonstração simples para estudantes avançados do ensino médio.,"Neste vídeo, demonstro a desigualdade de Cauchy–Schwarz em um contexto de análise real e sob a perspectiva da teoria dos números, sem recorrer a conceitos de espaços métricos e de normas. A demonstração é acessível a estudantes avançados do ensino médio.",2025-12-26,00:36:00,5UVnLilScIg,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=5UVnLilScIg,-------,-------,-------,-------,-------,-------,-------,-------
+Video,012,mathematics,youtube,Análise matemática,Demonstração da desigualdade matemática (exercício 2.7 do livro The Cauchy-Schwarz Master Class).,"Neste vídeo resolvo o exercício 2.7 do livro Cauchy-Schwarz Master-Class. O enunciado do problema é o seguinte: dados x, y, z ≥ 0: xyz ≥ 1 → (1 + x)(1 + y)(1 + z) ≥ 8. E eu acabo discutindo e generalizando o problema. Parte do vídeo é improvisada, pois fui pensando enquanto gravava e acabei fazendo algumas afirmações sem refletir profundamente, que talvez estejam incorretas ou incompletas. Porém, um dos objetivos do meu canal é demonstrar como pesquisadores profissionais pensam e atacam problemas, mesmo que sejam problemas de fixação de conceitos.
+
+Steele, J. M. (2004). The Cauchy-Schwarz Master Class: An Introduction to the Art of Mathematical Inequalities. Cambridge University Press.
+DOI: https://doi.org/10.1017/CBO9780511817106.
+https://www.cambridge.org/core/books/cauchyschwarz-master-class/A444E291C6E5928ADB2DD9F37C4C6EB8",2025-12-27,00:39:31,MXczcfmpxGY,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=MXczcfmpxGY,-------,-------,-------,-------,-------,-------,-------,-------
+Video,013,mathematics,youtube,Análise matemática,"Questão 05, Dia 02 da prova do IME-2025/2026 (questão dissertativa da prova de matemática)","Neste vídeo, resolvi a questão 5 do segundo dia da prova de Matemática do IME 2025/2026. Trata-se de uma prova discursiva. Além de resolver a questão, aprofundo-me em conceitos avançados de análise funcional, incluindo a desigualdade de Cauchy–Schwarz e a desigualdade de Jensen. A questão consiste em demonstrar que a média aritmética é um limite superior para a média harmônica, com base em apenas três termos. Em seguida, generalizo o resultado para n termos.
+
+Link para a prova de matemática do IME-2025
+https://inscricoes.ime.eb.br/documentos/Prova_Discursiva_de_Matem%C3%A1tica.pdf",2025-12-10,00:42:23,2Rhxz9y4Wv0,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=2Rhxz9y4Wv0,-------,-------,-------,-------,-------,-------,-------,-------
+Video,014,data_science,youtube,Ciência de Dados e IA,"Agentes de Inteligência Artificial: Conceitos, Funcionamento, Aplicações e Limitações","Neste vídeo, apresento uma introdução estruturada aos agentes de inteligência artificial: sistemas capazes de interpretar objetivos, planejar ações, utilizar ferramentas externas e executar tarefas em diferentes níveis de autonomia.
+
+O conteúdo distingue agentes de IA, assistentes inteligentes e chatbots, examinando características como memória contextual, planejamento, uso de ferramentas e adaptação ao contexto. Também descreve o ciclo típico de funcionamento de um agente: compreender o objetivo, elaborar um plano, buscar informações, executar ações e avaliar os resultados.
+
+Discutem-se a integração com mecanismos de busca, bases de dados, ambientes de execução, APIs e aplicações externas, bem como os usos práticos em pesquisa, análise de dados, produção de conteúdo, programação, automação e geração de relatórios estruturados. O vídeo também apresenta diferentes categorias de agentes, sistemas coordenados por subagentes especializados e arquiteturas multiagente.
+
+Por fim, são analisadas limitações como erros de interpretação, falhas de execução, riscos de segurança e problemas de confiabilidade, destacando a importância da supervisão humana e do controle dos resultados. O objetivo é oferecer uma visão clara e tecnicamente fundamentada sobre os agentes de IA.
+
+00:00 Introdução aos agentes de IA
+01:49 O que é um agente de IA
+03:01 Chatbots, assistentes e agentes
+04:14 Características fundamentais
+05:27 Ciclo de funcionamento
+06:40 Integração com ferramentas externas
+07:53 Aplicações práticas
+09:01 Geração de resultados estruturados
+10:08 Classificação dos agentes
+11:17 Arquiteturas multiagente
+12:31 Limitações e supervisão humana",2026-07-29,00:13:41,oaKXsIK8768,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=oaKXsIK8768,-------,-------,-------,-------,-------,-------,-------,-------
+Video,015,data_science,youtube,Estatística e Probabilidade,Teste de Wilcoxon: quando usar estatística não paramétrica,"O vídeo apresenta uma explicação do teste não paramétrico de Wilcoxon, destacando sua utilidade quando a suposição de normalidade não pode ser assumida. A exposição enfatiza quando o método é apropriado, seus limites práticos e como aplicá-lo de forma tecnicamente consistente.",2025-11-26,00:28:46,ET12FMffAmI,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=ET12FMffAmI,-------,-------,-------,-------,-------,-------,-------,-------
+Video,016,physics,youtube,Física Clássica,O problema do SAT que todos erraram: paradoxo das moedas e roda de Aristóteles,"Neste vídeo, apresento o paradoxo das moedas (a questão do SAT que todo mundo errou) e o da roda de Aristóteles. Escrevi um artigo didático sobre ambos os temas e publiquei-o na Revista Brasileira de Ensino de Física.
+
+O objetivo do artigo é desmistificar paradoxos aparentes que surgem na física e na matemática, mostrando que eles são, na realidade, interpretações equivocadas de conceitos, além de utilizar a linguagem de programação Python para convencer os estudantes a implementar as equações determinísticas de sistemas geométricos e físicos, demonstrando que os padrões de imagem descritos são, de fato, naturais quando a matemática e a computação são usadas corretamente.
+
+Artigo na RBEF:
+https://www.scielo.br/j/rbef/a/4JqG3XG435VBQT3FV8ryFhS/?lang=en
+
+Repositório no GitHub:
+https://github.com/ozsp12/coinparadox/tree/main",2026-01-04,00:43:08,uzmDvQQZoGs,published,1,1,1,1,1,0,0,0,0,0,0,0,https://arxiv.org/abs/2512.00123,https://doi.org/10.1590/1806-9126-RBEF-2025-0401,-------,https://www.youtube.com/watch?v=uzmDvQQZoGs,https://www.tiktok.com/@olsp1982/video/7591487240614858005,-------,-------,-------,-------,-------,-------,-------
+Video,017,physics,youtube,Física Clássica,"Loop vertical, razão entre altura e raio e o alcance atual da automação de frontend","Tarefas de baixa complexidade no desenvolvimento de frontend já podem ser executadas por inteligência artificial generativa. Isso inclui a criação de interfaces, páginas estáticas, animações, componentes simples e integração com serviços de hospedagem. Sistemas com gerenciamento de estado, autenticação, acessibilidade, testes, segurança e manutenção contínua ainda exigem supervisão técnica. Parte das tarefas de backend e full-stack também tende a ser incorporada a esse processo de automação.
+
+Conectei o Codex, da OpenAI, ao meu repositório no GitHub e descrevi uma aplicação em HTML para simular um problema elementar de mecânica. Uma partícula pontual é abandonada do repouso em uma rampa de altura H e percorre, sem atrito, um loop circular vertical de raio R. O problema consiste em determinar o valor mínimo da razão
+
+k = H/R
+
+Para que a partícula complete a trajetória sem perder contato com a pista. No topo do loop, a resultante radial é dada por
+
+N + Mg = Mv²/R
+
+Em que N é a força normal. Como a pista não pode exercer força de tração sobre a partícula, deve-se impor N ≥ 0.
+
+A velocidade mínima no topo ocorre no caso limite N = 0, de modo que
+
+v² = gR.
+
+Pela conservação da energia mecânica entre a posição inicial e o topo do loop, situado a uma altura 2R, tem-se
+
+MgH = Mv²/2 + 2MgR.
+
+Substituindo v² = gR, obtém-se
+
+Hₘᵢₙ = 5R/2,
+
+e, portanto,
+
+kₘᵢₙ = Hₘᵢₙ/R = 5/2.
+
+A massa M se cancela na dedução. O resultado depende apenas da geometria do sistema e das hipóteses de ausência de atrito, de partícula pontual e de contato contínuo com a pista. O Codex deduziu as equações sem que eu as fornecesse. Isso era esperado em um problema clássico desse nível. O aspecto mais relevante foi a execução do restante do fluxo. O agente acessou o repositório, criou os arquivos do projeto, integrou a aplicação ao meu site e publicou o resultado no GitHub Pages [1].
+
+Eu pretendia desenvolver aplicações para o ensino de física, mas este projeto competia com minhas atividades acadêmicas. Com o ChatGPT, esse plano pode começar a ser implementado. Por enquanto, os projetos serão hospedados no meu site. Mas, futuramente, penso em desenvolver um app.
+
+O vídeo em anexo apresenta uma prova de conceito (PoC) desenvolvida em Python. A aplicação em HTML está disponível na Ref. [2].
+
+Referências
+[1] https://ozsp12.github.io
+[2] https://ozsp12.github.io/physics_anim/rollercoster_loop/",2026-08-04,00:00:12,yvrqztc1NeA,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=yvrqztc1NeA,-------,-------,-------,-------,-------,-------,-------,-------
+Video,018,physics,youtube,Física Clássica,Bloco em um Plano Inclinado Deslizante (Leis de Newton),"Neste vídeo, resolvemos um problema clássico da mecânica: um bloco de massa m desliza sem atrito sobre um plano inclinado de massa M, que por sua vez pode se mover livremente sobre uma superfície horizontal sem atrito. O objetivo é determinar:
+
+* A aceleração do bloco em relação ao plano;
+* A aceleração do bloco em relação ao solo;
+* A aceleração do plano inclinado.
+
+Utilizamos as Leis de Newton em um referencial inercial e aplicamos vínculos cinemáticos entre as posições do bloco e do plano para montar um sistema completo de equações diferenciais. O problema exige análise vetorial cuidadosa e compreensão das interações entre sistemas móveis acoplados.
+
+📚 Referências
+* Marion, J. B., & Thornton, S. T. Classical Dynamics of Particles and Systems. 5ª ed.
+* Halliday, D., Resnick, R., & Walker, J. Fundamentals of Physics.
+* Nussenzveig, H. M. Curso de Física Básica — Volume 1: Mecânica.
+* Oscar Bollina, J. Rodrigo Parreira. A problem of relative, constrained motion. The Physics Teacher, 36(6), 334–335. doi: https://doi.org/10.1119/1.880100. arxiv: https://arxiv.org/abs/physics/9808049
+
+🔗 Me siga nas redes sociais:
+🌐 Webpage: https://ozsp12.github.io/
+✅ GitHub: https://github.com/ozsp12
+🧪 ResearchGate: https://www.researchgate.net/profile/Osvaldo-Santos-Pereira
+🔬 Google Scholar: https://scholar.google.com/citations?user=HIZp0X8AAAAJ&hl=en
+🧾 ORCID: https://orcid.org/0000-0003-2231-517X
+💼 LinkedIn: https://www.linkedin.com/in/ozsp12
+🧡 Patreon: https://www.patreon.com/ozsp12
+✍️ Medium: https://medium.com/@ozsp12
+𝕏 X (Twitter): https://x.com/ozsp12
+📱 TikTok: https://www.tiktok.com/@ozsp12
+▶️ YouTube: https://www.youtube.com/@ozlsp12",2025-08-09,00:05:43,NfphOjG623Y,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=NfphOjG623Y,-------,-------,-------,-------,-------,-------,-------,-------
+Video,019,physics,youtube,Física Clássica,Why Does He Spin Faster? Angular Momentum Explained Clearly,"What happens when a person spinning on a rotating chair pulls two dumbbells closer to the body?
+
+In this video, we explore one of the clearest demonstrations of angular momentum conservation. The explanation connects rotational speed, moment of inertia, external torque, rotational kinetic energy, and the distribution of mass around the axis of rotation.
+
+The central idea is simple: when the dumbbells move closer to the rotation axis, the moment of inertia decreases. Since the external torque is negligible, angular momentum remains approximately conserved, so the rotational speed increases. This is an excellent example of how changing the distribution of mass can alter rotational motion without requiring a significant external torque. The video includes:
+
+• A conceptual physics challenge
+• A direct and intuitive solution
+• Definitions of angular velocity, moment of inertia, torque, and angular momentum
+• A detailed comparison between the initial and final states
+• A discussion of why rotational kinetic energy is not conserved in this process
+• Applications to figure skating, diving, gymnastics, and rigid-body dynamics
+• A final review with textbook references for further study
+
+Chapters
+00:00 The Rotating-Chair Physics Challenge
+00:34 Why Pulling the Dumbbells Increases the Spin
+01:19 Angular Velocity, Rotation Axis, and Moment of Inertia
+02:20 External Torque and Conservation of Angular Momentum
+03:28 Detailed Comparison of the Initial and Final States
+04:29 Review of Angular Momentum and Moment of Inertia
+06:20 References and Further Reading
+
+References
+1. Halliday, D., Resnick, R., & Walker, J. Fundamentals of Physics. 11th ed. Wiley, 2018. Chapters 10–11: Rotational Motion and Angular Momentum.
+2. Serway, R. A., & Jewett, J. W. Physics for Scientists and Engineers with Modern Physics. 10th ed. Cengage, 2018. Chapters 10–11: Rotation of Rigid Bodies and Conservation Laws.
+3. Tipler, P. A., & Mosca, G. Physics for Scientists and Engineers. 7th ed. W. H. Freeman, 2008. Chapter 10: Rotation and Angular Momentum.
+4. Marion, J. B., & Thornton, S. T. Classical Dynamics of Particles and Systems. 5th ed. Cengage, 2013. Chapter 9: Rotational Motion of Rigid Bodies.
+5. Goldstein, H., Poole, C., & Safko, J. Classical Mechanics. 3rd ed. Addison-Wesley, 2002. Chapter 5: Rotational Motion.",2026-07-23,00:07:54,zBJQdOW0DYg,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=zBJQdOW0DYg,-------,-------,-------,-------,-------,-------,-------,-------
+Video,020,physics,youtube,Física Clássica,A Polia de Atwood escondendo o Teorema de Pitágoras,"Este vídeo explora como uma simples máquina de Atwood pode revelar de forma elegante o teorema de Pitágoras por meio da física e da geometria. Partindo das leis de Newton e do equilíbrio de forças, analisamos as tensões, os ângulos e as relações entre massas no sistema, mostrando como as restrições físicas conduzem naturalmente à famosa relação entre os lados de um triângulo retângulo. Com explicações passo a passo, insights geométricos e uma derivação matemática clara, o vídeo faz a ponte entre a mecânica clássica e a matemática de maneira visualmente intuitiva. É perfeito para estudantes, educadores e para qualquer pessoa interessada nas conexões profundas entre física e geometria.
+
+00:00 Introdução – Pitágoras e a Máquina de Atwood
+00:38 Geometria do Sistema
+01:23 Forças Atuantes
+02:15 Equilíbrio
+02:59 Decomposição das Forças
+04:02 Regra do Paralelogramo
+04:33 Equações
+05:00 Relações Entre Massas
+05:19 Eliminando os Ângulos
+05:33 Usando a Soma de Ângulos
+05:42 Cosseno da Soma
+06:01 Relação Final das Massas
+06:51 Condição do Ângulo Reto
+07:06 Triângulo Geométrico
+07:33 Da Física à Geometria
+08:02 Conclusão",2025-09-28,00:08:25,Deud6fViSQw,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=Deud6fViSQw,-------,-------,-------,-------,-------,-------,-------,-------
+Video,021,physics,youtube,Física Clássica,The Sliding Wedge Problem: Newtonian Mechanics Done Right,"In this video, we explore the dynamics of a classic problem in classical mechanics: a block sliding on a frictionless wedge that can itself slide freely on a smooth horizontal surface. Step by step, we derive the equations of motion, analyze the geometric constraints, and investigate the interplay between forces and accelerations. We work within the inertial frame, apply Newton’s laws rigorously, and reveal the full set of coupled equations governing the system. The final result provides the accelerations of both the block and the wedge, illustrating the conservation principles and the elegance of analytical mechanics in describing complex motion.
+
+00:00 Presenting the problem (53s)
+00:56 Parameters of the problem (70s)
+02:07 Observers and reference frames (56s)
+03:05 Geometric constraints of the system (79s)
+04:26 Horizontal and vertical positions of the block (78s)
+05:47 Equations of motion and constraint (91s)
+07:19 Equations of motion and constraint (51s)
+08:12 Remembering equations (40s)
+08:54 Important relations (32s)
+09:28 Final equation (32s)
+10:02 Final remarks (84s)
+
+#Physics #ClassicalMechanics #NewtonianMechanics #AnalyticalMechanics #EngineeringPhysics #MathematicalPhysics #PhysicsEducation #MechanicsProblems #PhysicsDerivations #ScienceExplained #STEM #PhysicsStudents",2025-09-19,00:11:28,AO0EU9an06s,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=AO0EU9an06s,-------,-------,-------,-------,-------,-------,-------,-------
+Video,022,physics,youtube,Física Clássica,From Cardano to Coupled Oscillators: Solving Cubic Equations in Physics,"In this video, we establish a connection between algebra and classical mechanics. Starting from a system of coupled harmonic oscillators, we derive the characteristic cubic equation that governs its dynamics and solve it using the Cardano method. We first reduce the general cubic to its depressed form, then express its solutions in trigonometric form. These solutions are interpreted physically as the system's normal modes, with frequencies explicitly determined by the ratio of stiffness to mass.
+
+This presentation emphasizes structure, symmetry, and method: how an abstract algebraic technique developed in the sixteenth century provides exact solutions to a concrete physical problem. Topics covered include: reduction of cubic equations, Cardano’s method, trigonometric solutions, normal modes, and frequency degeneracy in coupled systems.
+
+This video was based on a solved example from Walter Greiner’s book on Hamiltonian Dynamics, chapter 8, example 8.3, on page 117. The figure in the video was generated using Nano Banana 2 (Gemini) and is based on Fig. 8.7 on page 118.
+
+The viewer can download the presentation from this video and the few pages of Greiner's book from the following GitHub repo:
+https://github.com/ozsp12/physics_elementary/tree/main/cardano_formula_harmonic_oscillators
+
+References
+Greiner, W. Classical Mechanics: Systems of Particles and Hamiltonian Dynamics. 2nd ed. Berlin: Springer, 2009.",2026-04-25,00:12:02,KrL0sttfNZ8,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=KrL0sttfNZ8,-------,-------,-------,-------,-------,-------,-------,-------
+Video,023,physics,youtube,Física Clássica,Questão de Olimpíada de Física: partícula material sobre um bloco alongado de comprimento L.,"Neste vídeo, apresento a resolução detalhada da 8ª questão da terceira fase da Olimpíada Brasileira de Física de 2001, destinada aos estudantes do primeiro e do segundo ano do Ensino Médio.
+
+O problema considera um bloco de massa M e comprimento L, inicialmente em repouso sobre uma superfície horizontal sem atrito. Sobre ele encontra-se um corpo de massa m, cujas dimensões podem ser desprezadas em comparação com o comprimento do bloco. Entre os dois corpos atuam o atrito estático e o cinético, enquanto uma força horizontal constante F é aplicada ao bloco maior.
+
+A resolução é dividida em dois regimes físicos. No primeiro, determinamos a força máxima que pode ser aplicada sem que ocorra deslizamento relativo entre os corpos. No segundo caso, considerando uma força superior a esse limite, calculamos a aceleração relativa e o tempo necessário para que a partícula percorra o comprimento do bloco e perca o contato com ele.
+
+A análise envolve conceitos fundamentais de mecânica clássica, entre eles:
+
+– Segunda Lei de Newton;
+– atrito estático e atrito cinético;
+– diagramas de forças;
+– movimento relativo;
+– escolha de referenciais inerciais e não inerciais;
+– condições de vínculo e limites de deslizamento.
+
+A questão original pode ser consultada na prova oficial da Olimpíada Brasileira de Física. OBF 2001, terceira fase, prova para o primeiro e o segundo ano do Ensino Médio, 8ª questão.
+https://sec.sbfisica.org.br/olimpiadas/obf2001/download/OBF2001-F3-12A.pdf
+
+Para mais materiais sobre este conteúdo ver repositório no GitHub
+https://github.com/ozsp12/physics_elementary/tree/main/obf2001_question_8
+
+As referências abaixo apresentam tratamentos complementares das leis de Newton, das forças de atrito, do movimento relativo e da dinâmica de sistemas de partículas. Os textos de Halliday, Resnick e Walker e de Nussenzveig são particularmente adequados para uma introdução sistemática, enquanto Kleppner e Kolenkow, Marion e Thornton e Taylor oferecem uma abordagem mais aprofundada da mecânica clássica.
+
+Referências para estudo:
+[1] HALLIDAY, D.; RESNICK, R.; WALKER, J. Fundamentals of Physics. 10th ed. Hoboken: John Wiley & Sons, 2014.
+[2] KLEPPNER, D.; KOLENKOW, R. J. An Introduction to Mechanics. 2nd ed. Cambridge: Cambridge University Press, 2014.
+[3] MARION, J. B.; THORNTON, S. T. Classical Dynamics of Particles and Systems. 5th ed. Belmont: Brooks/Cole, 2004.
+[4] NUSSENZVEIG, H. M. Curso de Física Básica: Mecânica. v. 1. 5. ed. São Paulo: Blucher, 2013.
+[5] TAYLOR, J. R. Classical Mechanics. Sausalito: University Science Books, 2005.
+
+Capítulos
+00:00 Enunciado e definição das variáveis
+01:35 Dois regimes: sem deslizamento e com deslizamento
+02:57 Escolha do referencial de análise
+04:13 Diagramas de forças da partícula e do bloco
+06:15 Equações de movimento e vínculos geométricos
+08:45 Cenário 1: força máxima sem deslizamento
+15:01 Cenário 2: aceleração relativa entre os corpos
+19:44 Aceleração relativa em função de Fmáx
+21:34 Tempo para a partícula percorrer o comprimento L
+23:32 Recapitulação e conclusão
+
+#Física #OBF #OlimpíadaBrasileiraDeFísica #Mecânica #LeisDeNewton #Atrito #MovimentoRelativo #ProblemasDeFísica #EnsinoDeFísica #FísicaClássica",2025-12-17,00:24:50,scRQ5DAtjjw,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=scRQ5DAtjjw,-------,-------,-------,-------,-------,-------,-------,-------
+Video,024,physics,youtube,Física Clássica,Pêndulo duplo simulado em Python - sistemas dinâmicos e caos na mecânica clássica,"Neste vídeo, eu explico o sistema físico do pêndulo duplo usando métodos numéricos em Python e crio uma simulação do sistema com animação. O pêndulo duplo é um sistema físico muito simples, mas bastante pedagógico para o ensino de sistemas dinâmicos.
+
+Computational Physics GitHub:
+https://github.com/ozsp12/computational_physics/tree/main
+
+Double Pendulum Jupyter Notebook:
+https://github.com/ozsp12/computational_physics/blob/main/double_pendulum_dynamical_system/double_pendulum_dynamical_system.ipynb",2025-12-31,00:34:11,oyBss2H3a_g,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=oyBss2H3a_g,-------,-------,-------,-------,-------,-------,-------,-------
+Video,025,physics,youtube,Física Quântica,Como uma partícula atravessa uma barreira? Simulando tunelamento em Python,"Este vídeo apresenta uma exploração visual e conceitual do tunelamento quântico, um dos fenômenos mais contraintuitivos e fundamentais da mecânica quântica. A animação foi gerada com Python e simula um pacote de onda interagindo com uma barreira de potencial em degrau, resolvendo numericamente a equação de Schrödinger dependente do tempo. Ela demonstra como partículas quânticas podem penetrar e se transmitir por regiões classicamente proibidas. Acompanhado por uma narração explicativa, o vídeo explora os fundamentos matemáticos, a interpretação física e as aplicações tecnológicas do tunelamento, oferecendo clareza e rigor para estudantes, educadores e entusiastas da física quântica.
+
+00:00 Introdução  
+00:17 Fundamento matemático  
+00:49 A barreira de potencial em degrau  
+01:25 Visão clássica vs visão quântica  
+01:58 Comportamento de tunelamento  
+02:35 Fenômeno do tunelamento quântico  
+03:14 Comportamento clássico vs quântico  
+03:44 Aplicações reais do tunelamento quântico  
+04:23 Simulação em Python do tunelamento quântico
+
+🔗 Me siga nas redes sociais:
+🌐 Webpage: https://ozsp12.github.io/
+✅ GitHub: https://github.com/ozsp12
+🧪 ResearchGate: https://www.researchgate.net/profile/Osvaldo-Santos-Pereira
+🔬 Google Scholar: https://scholar.google.com/citations?user=HIZp0X8AAAAJ&hl=en
+🧾 ORCID: https://orcid.org/0000-0003-2231-517X
+💼 LinkedIn: https://www.linkedin.com/in/ozsp12
+🧡 Patreon: https://www.patreon.com/ozsp12
+✍️ Medium: https://medium.com/@ozsp12
+𝕏 X (Twitter): https://x.com/ozsp12
+📱 TikTok: https://www.tiktok.com/@ozsp12
+▶️ YouTube: https://www.youtube.com/@ozlsp12",2025-07-20,00:05:17,z7aMYTNa7ms,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=z7aMYTNa7ms,-------,-------,-------,-------,-------,-------,-------,-------
+Video,026,mathematics,youtube,Geometria,Como calcular a área de uma folha inscrita em um quadrado | Geometria explicada passo a passo,"Neste vídeo, calculamos a área exata de uma região em forma de lente formada por dois quartos de círculo inscritos em um quadrado de lado ""a"". 
+
+00:00 Definição do Problema  
+00:37 Construção dos Círculos  
+01:21 Área do Quarto de Círculo A E C D A  
+01:38 Área do Triângulo A C D  
+01:56 Simetria da Folha A E C F A  
+02:16 Relação Entre as Áreas  
+02:49 Expressão Final para a Área
+
+#Geometria #Matemática #DemonstraçãoGeométrica #GeometriaAnalítica #GeometriaDoCírculo #ÁreaDaLente #PiMenosDois #EducaçãoMatemática #STEM #RaciocínioMatemático #DesafioGeométrico #MatemáticaRigorosa #ResoluçãoDeProblemas",2025-10-04,00:03:09,FX4Q6VrbzgM,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=FX4Q6VrbzgM,-------,-------,-------,-------,-------,-------,-------,-------
+Video,027,mathematics,youtube,Geometria,How to find the radius of the incircle of a right triangle,"In this video, we derive the formula for the radius r of the circle inscribed in a right triangle with sides a, b, and c. Using geometric properties and algebraic manipulations, we express r entirely in terms of a, b, and c. This is a classic result in Euclidean geometry, frequently found in mathematics olympiads and problem-solving exercises.
+
+0:00 Introduction – The Problem
+0:38 Geometric Relationships
+1:22 Decomposition of Segments and Tangent Theorem
+2:24 Differentiating the Formula
+2:57 Decomposition by Area
+3:35 Decomposition into Subtriangles
+4:08 Solving for the Radius using the Area Equation
+4:27 Connecting the Formulas and the Pythagorean Theorem
+
+#Mathematics #Geometry #RightTriangle #InscribedCircle #MathematicalFormula #MathematicsEducation #MathematicsForAll #MathematicalProblems #MathematicsOlympiad #EuclideanGeometry #LearningMathematics #MathematicsOnYouTube #LogicalReasoning",2025-09-29,00:04:56,pY17bWLx5Xw,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=pY17bWLx5Xw,-------,-------,-------,-------,-------,-------,-------,-------
+Video,028,mathematics,youtube,Geometria,"Um problema clássico brasileiro de geometria plana que parece fácil, mas não é.","Neste vídeo, resolvemos o Problema 737 da renomada coleção *Fundamentos de Matemática Elementar*, de Gelson Iezzi e colaboradores. Este elegante problema de geometria combina tangência entre circunferências, arcos de circunferência, ângulos explementares e raciocínio euclidiano elementar em uma construção matemática surpreendentemente rica. A discussão inclui:
+
+• Uma interpretação cuidadosa da configuração geométrica
+• Uma revisão das fórmulas de comprimento de arco
+• Conversões entre radianos e graus
+• Ângulos explementares, ou conjugados
+• Uma derivação completa, passo a passo, do resultado final
+
+Embora o problema seja elementar, ele ilustra de maneira muito bonita como a geometria clássica pode produzir resultados elegantes e satisfatórios por meio de raciocínio cuidadoso e percepção estrutural.
+
+Você pode baixar a apresentação em formato PDF e um artigo pedagógico explicando o problema no link abaixo:
+https://github.com/ozsp12/math_elementary/tree/main/plane_geometry_question_737
+
+Referência:
+DOLCE, Osvaldo; POMPEO, José Nicolau. *Fundamentos de Matemática Elementar: Geometria Plana*. Vol. 9, 7ª edição. São Paulo: Atual Editora, 1993. Problema 737, p. 296.",2026-05-06,00:06:29,uVLGv0mEACs,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=uVLGv0mEACs,-------,-------,-------,-------,-------,-------,-------,-------
+Video,029,mathematics,youtube,Geometria,Find the Inradius of a Right Triangle: a Clean Geometry Solution,"Finding the Radius of the Inscribed Circle in a Right Triangle
+
+In this video, we derive the formula for the radius r of the circle inscribed in a right triangle with sides a, b, and c. Using geometric properties and algebraic manipulation, we express r entirely in terms of a, b, and c. The derivation is presented step-by-step, focusing on the reasoning behind each formula to provide a deep understanding rather than just memorizing results. This is a classic result in Euclidean geometry, often appearing in math olympiads and problem-solving practice, which we present clearly and concisely.
+
+00:00 Introduction – The Problem
+00:52 Geometric Relations
+02:03 Segment Decomposition and Tangent Theorem
+03:19 Deriving the Formula
+04:11 Area Decomposition
+04:54 Area Decomposition into Sub-Triangles
+05:55 Solving for the Radius Using the Area Equation
+06:48 Connecting the Formulas and the Pythagorean Theorem
+
+#Mathematics #Geometry #RightTriangle #Inradius #MathDerivation #EuclideanGeometry #TriangleProperties #MathEducation #STEM #MathTutorial",2025-09-25,00:07:15,8ufPXCY2XJM,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=8ufPXCY2XJM,-------,-------,-------,-------,-------,-------,-------,-------
+Video,030,mathematics,youtube,Geometria,Plane Geometry Problem from a Classic Brazilian Mathematics Book,"In this video, we solve Problem 737 from the renowned collection Fundamentals of Elementary Mathematics by Brazilian mathematician Gelson Iezzi and collaborators. This elegant geometry problem combines circle tangency, circumference arcs, explementary angles, and elementary Euclidean reasoning into a surprisingly rich mathematical construction.
+
+The discussion includes:
+• A careful interpretation of the geometric configuration
+• A review of circumference arc length formulas
+• Radian and degree conversions
+• Explementary, or conjugate, angles
+• A complete step-by-step derivation of the final result
+
+Although the problem is elementary, it beautifully illustrates how classical geometry can yield elegant and satisfying mathematical results through careful reasoning and structural insight. You can download the presentation in pdf format in the link below:
+https://github.com/ozsp12/math_elementary/tree/main/plane_geometry_question_737
+
+Reference:
+DOLCE, Osvaldo; POMPEO, José Nicolau. Fundamentos de Matemática Elementar: Geometria Plana. Vol. 9, 7th edition. São Paulo: Atual Editora, 1993. Problem 737, page 296.",2026-05-02,00:11:05,XBjucUgcMCs,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=XBjucUgcMCs,-------,-------,-------,-------,-------,-------,-------,-------
+Video,031,mathematics,youtube,Geometria,Questão #160 Dia 2 (azul) do ENEM 2025 (questão de geometria analítica),"A Questão #160 do exame ENEM 2025, aplicada no 2º dia do caderno azul, apresenta um problema de modelagem matemática relacionado ao comportamento de um fluido em um recipiente preenchido sob vazão constante. O objetivo é descrever, de forma funcional, a evolução da altura da água ao longo do tempo.
+
+No modelo proposto, a variável T representa o tempo decorrido, em minutos, enquanto D representa a distância entre a superfície da água e o tampo da mesa, em centímetros. O enunciado indica que essa relação não é linear, mas segue um padrão definido por uma função trigonométrica. Para esse ajuste, a expressão abaixo é utilizada
+
+D(T) = k + tan[p(T + m)] .
+
+Nessa expressão, as constantes k, p e m controlam, respectivamente, o deslocamento vertical, o estiramento horizontal e a translação da função ao longo do eixo do tempo. A interpretação dessa função, juntamente com o gráfico apresentado, permite identificar o comportamento físico do sistema e responder à questão proposta no exame.
+
+Capítulos
+00:00 Introdução e contexto da Questão 160 do Enem 2025
+01:42 Enunciado e interpretação inicial do gráfico
+03:27 Forma geral e parâmetros da função tangente
+04:22 Domínio, imagem e assíntotas verticais
+05:40 Dedução do período e do deslocamento horizontal
+07:16 Gráfico da função tangente usual
+08:51 Estrutura matemática do modelo proposto no Enem
+10:53 Estratégia de prova e resolução por alternativas
+12:24 Resolução completa: determinação de P, M e K
+14:38 Gráficos em Python e variação dos parâmetros
+16:53 Animação do recipiente sendo preenchido
+17:31 Notebook Jupyter, códigos e experimentos numéricos
+21:54 Encerramento
+
+Link do INEP:
+https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos
+
+Link para o Jupyter Notebook:
+https://github.com/ozsp12/math_elementary/tree/main/questao_tangente_enem_2025",2025-11-22,00:22:01,fvKghpRJkY8,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=fvKghpRJkY8,https://www.tiktok.com/@olsp1982/video/7575534029655608583?is_from_webapp=1&sender_device=pc&web_id=7580439068664989205,-------,-------,-------,-------,-------,-------,-------
+Video,032,mathematics,youtube,Geometria,IME 2022: números complexos resolvendo um problema de geometria,"Neste vídeo, discuto a questão 05 da prova objetiva do concurso de admissão do IME-2021/2022 [1]. Essa questão foi adaptada da prova final da Olimpíada Matemática Romena de 1984. Encontrei a questão por acaso em um livro de Titu Andreescu. Trata-se de uma questão difícil, o que mostra que, para ter um bom desempenho em concursos militares, é necessário mais do que preparação: é preciso estratégia. Afinal, mesmo um aluno excelente e bem treinado teria dificuldade em resolver essa questão à primeira vista. Aprofundei a discussão com base em alguns conceitos de números complexos estudados no ensino superior.
+
+Referências
+[1] IME-2021/2022 (prova objetiva)
+https://www.ime.eb.mil.br/images/arquivos/admissao/cfg/provas-anteriores/2021-2022/CFG1fase2021.pdf
+[2] Andreescu, Titu & Andrica, Dorin. Complex Numbers from A to . . . Z. 2nd ed., Birkhäuser, 2014. ISBN 978-0817684143.",2026-01-01,00:42:06,jt6RW7yieIs,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=jt6RW7yieIs,-------,-------,-------,-------,-------,-------,-------,-------
+Video,033,computer_science,youtube,Programação,Teste de complexidade temporal do método select (numpy) vs apply (pandas),"Este vídeo apresenta uma análise técnica de desempenho entre os métodos apply() do Pandas e np.select() do Numpy, com foco em eficiência computacional e boas práticas em ciência de dados. No vídeo, é demonstrado como cada abordagem processa e classifica em DataFrames, e avaliam-se os comportamentos de ambos os métodos em diferentes tamanhos de dados, variando de 10 a 1 milhão de linhas. 
+
+Notebook Jupyter: 
+https://github.com/ozsp12/oz_youtube/blob/main/videos/034_cs_algorithms_analise_complexidade_pandas_vs_numpy/apply_vs_select_methods.ipynb
+
+Post na Newsletter do LinkedIn: 
+https://www.linkedin.com/pulse/apply-vs-npselect-pandas-uma-an%C3%A1lise-quantitativa-de-santos-pereira-0u32f/?trackingId=7PoWseq%2BSxi1JMzABWt3FA%3D%3D
+
+Post explicando sobre o notebook:
+https://www.linkedin.com/posts/ozsp12_apply-vs-npselect-no-pandas-uma-an%C3%A1lise-activity-7394895580038238208-vA47?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAYVLuwBRoOGLctydlL6oZP7Ffwirgxbs9Q",2025-11-14,00:16:20,dJwS3mv8Ooo,published,0,0,0,1,1,1,1,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=dJwS3mv8Ooo,-------,https://www.linkedin.com/posts/ozsp12_apply-vs-npselect-no-pandas-uma-an%C3%A1lise-activity-7394895580038238208-vA47?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAYVLuwBRoOGLctydlL6oZP7Ffwirgxbs9Q,https://www.linkedin.com/pulse/apply-vs-npselect-pandas-uma-an%C3%A1lise-quantitativa-de-santos-pereira-0u32f/?trackingId=7PoWseq%2BSxi1JMzABWt3FA%3D%3D,-------,-------,-------,-------,-------
+Video,034,computer_science,youtube,Programação,SymPy: fazendo álgebra simbólica com Python,"Neste vídeo, apresento a biblioteca Sympy para Python e falo sobre um projeto que estou propondo, no qual postarei vídeos sobre física e matemática computacional. Pretendo abordar vários níveis, do fundamental ao de pesquisa. Vou discutir frações, soluções das equações de Einstein e outros tópicos interessantes.
+
+Sympy
+https://docs.sympy.org/latest/index.html
+
+GitHub Repo (Elementary Mathematics)
+https://github.com/ozsp12/math_elementar/tree/main
+
+GitHub Repo (Computational Physics)
+https://github.com/ozsp12/computational_physics",2025-12-30,00:23:04,LqBHkFpW6vk,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=LqBHkFpW6vk,-------,-------,-------,-------,-------,-------,-------,-------
+Video,035,computer_science,youtube,Programação,"Aula 01 — Python do zero para análise de dados: variáveis, lógica e primeiros códigos","Esta é a primeira aula do curso de Python para cidadãos dos dados (iniciantes). Nesta aula abordo a sintaxe de Python e apresento alguns exemplos para que a audiência vá se acostumando aos poucos com a IDE, e com a linguagem.
+
+Github (Curso de programação):
+https://github.com/ozsp12/programacao_introducao
+
+Notebook Jupyter da aula 01:
+https://github.com/ozsp12/programacao_introducao/blob/main/aulas_algoritmos_programacao/01_intro_sintaxe_python.ipynb",2025-12-27,01:25:23,oclZGqDb9R0,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=oclZGqDb9R0,-------,-------,-------,-------,-------,-------,-------,-------
+Video,036,warp_drive,youtube,Warp Drive,Warp Drive: A Física por Trás da Dobra Espacial,"Aviso: Esta não é uma apresentação especulativa ou de divulgação científica, mas sim uma introdução pedagógica fundamentada no formalismo da Relatividade Geral.
+
+Capítulos do vídeo (YouTube Chapters):
+00:00 - Introdução e a proposta de Alcubierre
+00:14 - A bolha de dobra e a manipulação do espaço-tempo
+00:40 - O efeito de esteira e o transporte do referencial
+00:50 - Física no interior da bolha de dobra
+01:10 - Formalismo 3+1 na Relatividade Geral
+01:25 - A decomposição ADM
+01:39 - Função lapso e vetor de deslocamento: conceitos fundamentais
+02:06 - A métrica de Alcubierre e o impulso da bolha
+02:26 - Hiperbolicidade global e preservação da causalidade
+02:54 - Energia negativa e violação das condições de energia
+
+Este vídeo apresenta uma visão geral concisa e rigorosa dos fundamentos teóricos do Warp Drive de Alcubierre, destinada a estudantes de pós-graduação e pesquisadores em Relatividade Geral. A métrica de Alcubierre, introduzida em 1994, descreve uma geometria do espaço-tempo que permite um deslocamento efetivamente superluminal por meio da contração do espaço à frente de uma bolha de dobra e de sua expansão atrás dela, sem violar localmente a causalidade ou o limite da velocidade da luz no interior da bolha.
+
+Conceitos principais:
+Folheação do espaço-tempo em hipersuperfícies espaciais
+Definição e interpretação da função lapso e do vetor de deslocamento
+Estrutura da métrica de Alcubierre
+Hiperbolicidade global e preservação da causalidade
+Violação das condições clássicas de energia (Fraca e Dominante)
+Papel da matéria exótica e implicações para o tensor energia-momento
+
+Referência:
+Alcubierre, M. (1994). The warp drive: hyper-fast travel within general relativity. *Classical and Quantum Gravity*, 11(5), L73. [https://doi.org/10.1088/0264-9381/11/5/001](https://doi.org/10.1088/0264-9381/11/5/001)
+arXiv: [https://arxiv.org/abs/gr-qc/0009013](https://arxiv.org/abs/gr-qc/0009013)
+
+Palavras-chave:
+Warp drive de Alcubierre, bolha de dobra, relatividade geral, formalismo ADM, geometria do espaço-tempo, equações de Einstein, matéria exótica, causalidade, condições de energia",2025-07-27,00:03:27,-HVx9UttdIc,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=-HVx9UttdIc,-------,-------,-------,-------,-------,-------,-------,-------
+Video,037,warp_drive,youtube,Warp Drive,Warp Drive in General Relativity: Faster-than-Light Without Breaking Locally,"Disclaimer: This is not a speculative or popular-science presentation, but a pedagogical introduction grounded in the formalism of General Relativity.
+
+This video provides a concise and rigorous overview of the theoretical foundations of the Alcubierre Warp Drive, designed for graduate-level students and researchers in General Relativity. The Alcubierre metric, introduced in 1994, describes a spacetime geometry that allows effective superluminal travel by contracting space in front of a warp bubble and expanding it behind, without violating local causality or the speed-of-light limit within the bubble.
+
+00:00 - Introduction  
+00:18 - Alcubierre’s Revolutionary Idea  
+00:32 - The Warp Bubble Mechanism  
+00:46 - Geometry of the Bubble  
+01:07 - Conveyor Belt Effect  
+01:29 - Physics Inside the Bubble  
+01:48 - Flat Spacetime Interior  
+02:07 - The 3+1 Formalism  
+02:37 - ADM Formalism and Its Role  
+02:52 - Lapse and Shift in the Warp Metric  
+03:38 - Lapse Function and Boost  
+03:53 - Causality and Hyperbolicity  
+04:18 - Energy Condition Violations 
+
+Key concepts:
+* Foliation of spacetime into spacelike hypersurfaces
+* Definition and interpretation of the lapse function and shift vector
+* Structure of the Alcubierre metric
+* Global hyperbolicity and causality preservation
+* Violation of classical energy conditions (Weak and Dominant)
+* Role of exotic matter and implications of the energy-momentum tensor
+
+Reference:
+Alcubierre, M. (1994). The warp drive: hyper-fast travel within general relativity. Classical and Quantum Gravity, 11(5), L73. https://doi.org/10.1088/0264-9381/11/5/001
+arXiv: https://arxiv.org/abs/gr-qc/0009013
+
+Keywords:
+Alcubierre drive, warp bubble, general relativity, ADM formalism, spacetime geometry, Einstein equations, exotic matter, causality, energy conditions.
+
+#GeneralRelativity #TheoreticalPhysics #AlcubierreDrive #Spacetime #WarpDrive #Einstein #Interestellar #physics #foryou #foryoupage 
+
+🔗 Follow me on social media:
+🌐 Webpage: https://ozsp12.github.io/
+✅ GitHub: https://github.com/ozsp12
+🧪 ResearchGate: https://www.researchgate.net/profile/Osvaldo-Santos-Pereira
+🔬 Google Scholar: https://scholar.google.com/citations?user=HIZp0X8AAAAJ&hl=en
+🧾 ORCID: https://orcid.org/0000-0003-2231-517X
+💼 LinkedIn: https://www.linkedin.com/in/ozsp12
+🧡 Patreon: https://www.patreon.com/ozsp12
+✍️ Medium: https://medium.com/@ozsp12
+𝕏 X (Twitter): https://x.com/ozsp12
+📱 TikTok: https://www.tiktok.com/@ozsp12
+▶️ YouTube: https://www.youtube.com/@ozlsp12",2025-07-25,00:04:24,SxDXN2_ATpM,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=SxDXN2_ATpM,-------,-------,-------,-------,-------,-------,-------,-------
+Video,038,mathematics,youtube,Teoria dos Números,Uma Equação Diofantina sem Soluções Positivas | 5^(2m) − 1 = n²,"Existe algum par de inteiros positivos que satisfaça essa equação? Neste vídeo, demonstramos, por contradição, que tal par não existe.
+
+O argumento começa reescrevendo a potência de 5 como um quadrado. Isso transforma a equação em uma diferença de quadrados, que pode ser fatorada como o produto de dois inteiros positivos iguais a 1.
+
+Como a única fatoração positiva de um é um por um, ambos os fatores devem ser iguais a um. Subtraindo as equações resultantes, concluímos que uma das variáveis deve ser igual a zero, o que contradiz a hipótese de que ela é positiva.
+
+A demonstração não depende da base cinco. Ela estabelece o fato mais geral de que dois quadrados perfeitos positivos não podem diferir por uma unidade. A diferença entre o quadrado de um inteiro e o quadrado de seu antecessor é igual ao dobro desse inteiro menos 1. Essa diferença é igual a 1 quando o menor quadrado é zero.
+
+Este vídeo apresenta uma introdução à teoria elementar dos números, à prova por contradição, à fatoração e às equações diofantinas. Hardy e Wright, assim como Niven, Zuckerman e Montgomery, oferecem introduções gerais à teoria dos números. Mordell apresenta um tratamento mais específico das equações diofantinas.
+
+CAPÍTULOS
+
+00:00 Enunciado do teorema
+01:11 Produto de inteiros positivos
+02:00 Conclusão e generalização
+02:40 Referências em teoria dos números
+03:32 Equações diofantinas e leituras complementares
+
+REFERÊNCIAS
+
+1. G. H. Hardy e E. M. Wright, An Introduction to the Theory of Numbers, 6ª ed., Oxford University Press, 2008.
+
+2. Ivan Niven, Herbert S. Zuckerman e Hugh L. Montgomery, An Introduction to the Theory of Numbers, 5ª ed., Wiley, 1991.
+
+3. David M. Burton, Elementary Number Theory, 7ª ed., McGraw-Hill, 2011.
+
+4. Kenneth Ireland e Michael Rosen, A Classical Introduction to Modern Number Theory, 2ª ed., Springer, 1990.
+
+5. Titu Andreescu e Dorin Andrica, Number Theory: Structures, Examples, and Problems, Birkhäuser, 2009.
+
+6. Louis J. Mordell, Diophantine Equations, Academic Press, 1969.",2026-08-02,00:04:02,0Zk2XbYPopo,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=0Zk2XbYPopo,-------,-------,-------,-------,-------,-------,-------,-------
+Video,039,mathematics,youtube,Teoria dos Números,Prova matemática: Sejam p e q inteiros tais que p + q + pq é par. Prove que p e q são pares.,"Neste vídeo, eu demonstro que, sejam p e q inteiros tais que p + q + pq é par. Prove que p e q são pares. Eu também uso o vídeo para discutir a técnica de prova por contradição. Dou um exemplo de uma demonstração incorreta que estudantes iniciantes frequentemente cometem ao usar a hipótese do enunciado para demonstrar o problema.",2025-12-21,00:18:43,VmDh5tRMMX4,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=VmDh5tRMMX4,-------,-------,-------,-------,-------,-------,-------,-------
+Video,040,mathematics,youtube,algebra,10th-degree polynomial equation,10th-degree polynomial equation,2025-10-17,00:01:39,mJsv_uLeNgU,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=mJsv_uLeNgU,-------,-------,-------,-------,-------,-------,-------,-------
+Video,041,physics,youtube,Física Clássica,Experimento de medição da densidade da água,Artigo publicado na RBEF,,,,,1,1,1,0,0,0,0,0,1,0,0,0,https://arxiv.org/abs/2508.02682,https://doi.org/10.1590/1806-9126-RBEF-2025-0044,-------,-------,-------,-------,-------,-------,https://github.com/ozsp12/water_density_physexp,-------,-------,-------
+Video,042,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
+Video,043,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
+Video,044,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
+Video,045,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
+Video,046,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
+Video,047,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
+Video,048,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
+Video,049,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
+Video,050,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
