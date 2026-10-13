@@ -1,0 +1,61 @@
+# Beamer Presentation — English Narration
+
+## Slide 1 — Problem
+
+We begin with a polynomial equation of degree ten. The expression is one plus x plus x squared, plus x to the fourth, fifth, and sixth powers, plus x to the eighth, ninth, and tenth powers, equal to zero. Our objective is to identify every complex solution and determine how many times each solution occurs as a root. By the fundamental theorem of algebra, a polynomial of degree ten has ten complex roots when multiplicities are counted. This does not mean it must have ten different roots. The central clue is the pattern of missing powers: x cubed and x to the seventh are absent. We will use that pattern to reduce the equation to a much simpler problem.
+
+## Slide 2 — An Elementary Ansatz
+
+The first step is to group the terms without changing the polynomial. There are three consecutive blocks. The first is one plus x plus x squared. The second contains x to the fourth, fifth, and sixth powers. The third contains x to the eighth, ninth, and tenth powers. Factoring x to the fourth out of the second block, and x to the eighth out of the third, reveals the same quadratic expression in every block. We can now factor out one plus x plus x squared. What remains is one plus x to the fourth plus x to the eighth. We have therefore expressed the tenth-degree polynomial as a product of a quadratic and an eighth-degree polynomial. This factorization is the key to the solution.
+
+## Slide 3 — Solving the Two Factors
+
+A product is zero when at least one of its factors is zero, so we can study the factors separately. The first is one plus x plus x squared. The quadratic formula gives two nonreal solutions: negative one plus or minus i times the square root of three, all divided by two. These are the primitive cube roots of unity, conventionally denoted omega and omega squared. For the second factor, set t equal to x to the fourth. The equation becomes one plus t plus t squared equal to zero, so t is omega or omega squared. Each of these two values has four distinct fourth roots. In polar notation, their arguments are plus or minus pi over six, plus k times pi over two, where k runs from zero through three. The second factor therefore has eight distinct roots.
+
+## Slide 4 — The Repeated Roots Appear
+
+We have obtained two roots from the first factor and eight from the second, but we must not automatically regard them as ten distinct numbers. Both primitive cube roots also solve the eighth-degree factor. To see this, recall that omega cubed equals one. Consequently, omega to the fourth equals omega, and omega to the eighth equals omega squared. Substituting into the second factor gives one plus omega plus omega squared, which equals zero. The same reasoning applies to omega squared. Thus these two roots occur once in each factor and have multiplicity two in the product. The remaining six roots occur only once. The multiplicity count is two times two, plus six times one, giving ten, exactly the degree of the polynomial.
+
+## Slide 5 — The Structure of the Exponents
+
+We can explain the factorization systematically by looking at the exponents. Every nonzero term has an exponent of the form r plus four s, where both r and s take the values zero, one, or two. The index r selects a term within a block; the index s identifies the block itself. The table lists the nine possible combinations and reproduces the exponents zero, one, two, four, five, six, eight, nine, and ten. In base four, these correspond to pairs of digits chosen from zero, one, and two. The missing exponents three and seven would require the digit three. Because each exponent has a unique representation, the double sum separates into the product of two geometric sums. The initial factorization is therefore dictated by the coefficient pattern, rather than being a fortunate guess.
+
+## Slide 6 — A Closed Form
+
+Each factor is a finite geometric sum, so we can connect the polynomial to equations involving powers of x. Multiplying one plus x plus x squared by one minus x gives one minus x cubed. Similarly, multiplying one plus x to the fourth plus x to the eighth by one minus x to the fourth gives one minus x to the twelfth. Combining these two identities yields a polynomial identity: one minus x, times one minus x to the fourth, times P of x, equals one minus x cubed, times one minus x to the twelfth. This equality holds for every complex x, including values where one of the prefactors vanishes. Consequently, any zero of P must be a cube root or a twelfth root of unity. Since every cube root is also a twelfth root, all solutions lie among twelve candidate points on the unit circle. We still have to determine which candidates are genuine roots.
+
+## Slide 7 — Roots of Unity
+
+A root of unity is a complex number whose positive integer power equals one. For a given positive integer n, the equation z to the n equals one has precisely n distinct solutions. They are given by the complex exponential of two pi i k divided by n, with k running from zero to n minus one. Geometrically, these solutions are equally spaced around the unit circle. When n is twelve, successive arguments differ by pi over six, or thirty degrees. The indices zero, four, and eight mark the three cube roots of unity and form the vertices of an inscribed equilateral triangle. Each root of z to the n minus one is simple, since the derivative, n times z to the power n minus one, cannot vanish at a root of unity.
+
+## Slide 8 — Counting Multiplicities
+
+We now test the twelve candidate roots using the polynomial identity obtained earlier. At each point, multiplicities add when factors are multiplied. At x equals one, the right-hand side has multiplicity two, but the two prefactors on the left also contribute two, so P has multiplicity zero. At i, negative one, and negative i, one zero from the right-hand side is canceled by one zero from the prefactor, so these three points are also excluded. At omega and omega squared, both factors on the right vanish, while neither prefactor vanishes. Each of these roots therefore has multiplicity two in P. At the six remaining twelfth roots, the multiplicity is one. The table confirms that P has eight distinct roots: six simple and two double. Counting multiplicities gives ten, as required.
+
+## Slide 9 — The Roots on the Unit Circle
+
+The diagram summarizes the algebraic calculation as geometry. All twelve possible locations lie on the unit circle, but the marker styles distinguish three different cases. An open circle means that the candidate is not a root of P. A filled point means a simple root, and a point surrounded by an additional ring means a double root. The six simple roots occur at angles pi over six, pi over three, five pi over six, seven pi over six, five pi over three, and eleven pi over six. The two double roots occur at two pi over three and four pi over three; these are omega and omega squared. The excluded points are one, negative one, i, and negative i. The reflection symmetry across the real axis also confirms that complex-conjugate roots have equal multiplicities.
+
+## Slide 10 — Check: The Fourth-Power Substitution
+
+We can independently recover the eight roots of the second factor by returning to the substitution t equals x to the fourth. The quadratic equation in t gives two values, represented by exponentials with arguments plus and minus two pi over three. Extracting fourth roots divides these arguments by four and adds multiples of pi over two. The positive branch gives the angles pi over six, two pi over three, seven pi over six, and five pi over three. The negative branch gives eleven pi over six, pi over three, five pi over six, and four pi over three. These are eight different points on the unit circle. Among them, the angles two pi over three and four pi over three correspond to omega and omega squared. They also solve the first quadratic factor, confirming that they are the two double roots.
+
+## Slide 11 — Factorization over the Real Numbers
+
+Because P has real coefficients, every nonreal root occurs together with its complex conjugate, with the same multiplicity. A conjugate pair on the unit circle, with angles plus and minus theta, produces the real quadratic x squared minus two x cosine theta plus one. We apply this formula to the four conjugate pairs in the root diagram. The resulting factors are x squared plus x plus one, appearing twice; x squared minus x plus one; x squared minus the square root of three times x plus one; and x squared plus the square root of three times x plus one. Each has a negative discriminant because its corresponding angle is neither zero nor pi. Therefore, none of these quadratic factors has a real zero, and the original tenth-degree polynomial has no real solutions.
+
+## Slide 12 — Factorization over the Rational Numbers
+
+The previous factorization uses real coefficients, including the irrational number square root of three. To obtain a factorization over the rational numbers, multiply the two quadratics whose linear coefficients are opposite multiples of the square root of three. Their product is x to the fourth minus x squared plus one, which has integer coefficients. The complete rational factorization is therefore the square of x squared plus x plus one, multiplied by x squared minus x plus one, multiplied by x to the fourth minus x squared plus one. All three factors are monic, meaning that their leading coefficients equal one. Changing from real to rational factorization changes how the complex roots are grouped into factors; it does not change the roots themselves or their multiplicities.
+
+## Slide 13 — Monic and Cyclotomic Polynomials
+
+The rational factors have a natural description in terms of cyclotomic polynomials. A monic polynomial has leading coefficient one. A primitive root of unity of order n is a root whose smallest positive power equal to one is exactly n. The n-th cyclotomic polynomial, called phi n, is the monic product of the linear factors corresponding to all primitive roots of order n, each occurring once. In our problem, phi three is x squared plus x plus one. Phi six is x squared minus x plus one. Phi twelve is x to the fourth minus x squared plus one. Thus, the complete factorization can be written as phi three squared times phi six times phi twelve. This compact notation records both the multiplicative orders of the roots and the double occurrence of the primitive cube roots.
+
+## Slide 14 — Conclusion
+
+We can now state the complete solution. Every root has the form e to the power i k pi over six, where k is one, two, four, five, seven, eight, ten, or eleven. The indices four and eight give the two double roots; all the others give simple roots. Thus the equation has eight distinct complex solutions and ten roots when counted with multiplicity. There are no real solutions. The result emerged from a simple grouping of exponents, then gained a geometric interpretation through roots of unity and a structural interpretation through cyclotomic factors. The same method extends to products of two geometric sums. In particular, when m and b are relatively prime, every nontrivial m-th root of unity is shared by both factors and becomes a double root. Our example corresponds to m equal to three and b equal to four.
+
+## Slide 15 — References
+
+The mathematical background for this presentation is drawn from four references. Complex Numbers from A to Z, by Titu Andreescu and Dorin Andrica, develops complex numbers and roots of unity. Polynomials, by Edward Barbeau, presents elementary algebraic methods and factorization problems. Abstract Algebra, by David Dummit and Richard Foote, provides the algebraic framework for cyclotomic polynomials. Visual Complex Analysis, by Tristan Needham, develops the geometry of complex multiplication and the unit circle. Together, these sources support the algebraic and geometric methods used in the solution. Thank you for watching.
