@@ -19,7 +19,7 @@ class CheckResult:
     cases: int
     summary: str
     def __str__(self):
-        return f"PASS  [{self.cases:4d} checks]  {self.name}: {self.summary}"
+        return f"VERIFIED | {self.cases}/{self.cases} exact checks satisfied | {self.name}: {self.summary}"
 
 def _same(a, b):
     assert sp.cancel(a-b) == 0, f"Identity failed: {a} != {b}"
@@ -275,7 +275,7 @@ def run_all(verbose=True):
     results=[check() for check in CHECKS]
     if verbose:
         for result in results: print(result)
-        print(f"TOTAL: {sum(result.cases for result in results)} exact checks passed")
+        print(f"ALL VERIFICATIONS SATISFIED | {sum(result.cases for result in results)} exact checks | 0 failures")
     return results
 
 if __name__=="__main__":
