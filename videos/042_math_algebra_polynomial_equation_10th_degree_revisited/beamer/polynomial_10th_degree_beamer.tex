@@ -1,13 +1,13 @@
 % Polynomial equation of degree ten — typographically revised Beamer presentation.
 % Faithful in mathematical content to the supplied ten-page PDF; three new
 % pedagogical slides give the elementary ansatz before the structural proof.
-% Compile twice with: xelatex -halt-on-error polynomial_10th_degree.tex
+% Compile twice with pdfLaTeX (MiKTeX default) or with XeLaTeX.
+% PdfLaTeX uses Type 1 Libertinus (if available) or Latin Modern;
+% XeLaTeX/LuaLaTeX use the original Libertinus OpenType fonts.
 \documentclass[11pt,aspectratio=169]{beamer}
-\usepackage{fontspec}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathtools}
-\usepackage{unicode-math}
 \usepackage{ragged2e}
 \usepackage{tikz}
 \usepackage{booktabs}
@@ -15,11 +15,28 @@
 \usepackage{tabularx}
 \usetikzlibrary{calc}
 
-\setmainfont{LibertinusSerif-Regular.otf}[
-  BoldFont=LibertinusSerif-Bold.otf,
-  ItalicFont=LibertinusSerif-Italic.otf,
-  BoldItalicFont=LibertinusSerif-BoldItalic.otf]
-\setmathfont{LibertinusMath-Regular.otf}
+% Engine-dependent fonts. PDFLaTeX does not support fontspec/unicode-math;
+% isolate those packages in the XeLaTeX/LuaLaTeX branch.
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage{fix-cm}
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  % Keep the Libertinus typeface when installed; otherwise use Latin Modern.
+  \IfFileExists{libertinus-type1.sty}{%
+    \usepackage{libertinus}%
+  }{%
+    \usepackage{lmodern}%
+  }
+\else
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \setmainfont{LibertinusSerif-Regular.otf}[
+    BoldFont=LibertinusSerif-Bold.otf,
+    ItalicFont=LibertinusSerif-Italic.otf,
+    BoldItalicFont=LibertinusSerif-BoldItalic.otf]
+  \setmathfont{LibertinusMath-Regular.otf}
+\fi
 \usefonttheme{serif}
 \definecolor{ink}{RGB}{27,27,27}
 \definecolor{mediumink}{RGB}{102,102,102}
@@ -80,7 +97,7 @@ Write $P(x)$ for the polynomial on the left-hand side. Since $P$ has degree ten,
 \end{frame}
 
 % 2 — new: an elementary ansatz.
-\begin{frame}[t]{An elementary factorization.}
+\begin{frame}[t]{An elementary ansatz.}
 \tightbody
 The exponents appear in three consecutive groups, separated by gaps of one missing power. Before developing any theory, group the terms accordingly:
 \begin{equation}\label{eq:grouping}
@@ -290,6 +307,7 @@ The two double roots occur at
 % 10 — original independent fourth-root derivation, retained as verification.
 \begin{frame}[t]{Check: the substitution $t=x^4$.}
 \tightbody
+\fontsize{9.9}{11.2}\selectfont\setlength{\parskip}{2pt}
 The substitution $t=x^4$ provides an independent check. Solving its quadratic equation gives
 \begin{equation}\label{eq:check-t}
   t=\frac{-1\pm i\sqrt{3}}{2}=e^{\pm2\pi i/3}.
@@ -383,7 +401,7 @@ The problem studied here corresponds to $m=3$ and $b=4$.
 \begin{frame}[t]{References.}
 \slidebody
 \begingroup
-\fontsize{10.6}{14.2}\selectfont
+\fontsize{10.45}{14.0}\selectfont
 \begin{list}{\textbullet}{%
 \setlength{\leftmargin}{5.5mm}%
 \setlength{\labelwidth}{2.5mm}%
