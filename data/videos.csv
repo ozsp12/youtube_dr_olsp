@@ -654,7 +654,33 @@ REFERÊNCIAS
 Video,039,mathematics,youtube,Teoria dos Números,Prova matemática: Sejam p e q inteiros tais que p + q + pq é par. Prove que p e q são pares.,"Neste vídeo, eu demonstro que, sejam p e q inteiros tais que p + q + pq é par. Prove que p e q são pares. Eu também uso o vídeo para discutir a técnica de prova por contradição. Dou um exemplo de uma demonstração incorreta que estudantes iniciantes frequentemente cometem ao usar a hipótese do enunciado para demonstrar o problema.",2025-12-21,00:18:43,VmDh5tRMMX4,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=VmDh5tRMMX4,-------,-------,-------,-------,-------,-------,-------,-------
 Video,040,mathematics,youtube,algebra,10th-degree polynomial equation,10th-degree polynomial equation,2025-10-17,00:01:39,mJsv_uLeNgU,published,0,0,0,1,1,0,0,0,0,0,0,0,-------,-------,-------,https://www.youtube.com/watch?v=mJsv_uLeNgU,-------,-------,-------,-------,-------,-------,-------,-------
 Video,041,physics,youtube,Física Clássica,Experimento de medição da densidade da água,Artigo publicado na RBEF,,,,,1,1,1,0,0,0,0,0,1,0,0,0,https://arxiv.org/abs/2508.02682,https://doi.org/10.1590/1806-9126-RBEF-2025-0044,-------,-------,-------,-------,-------,-------,https://github.com/ozsp12/water_density_physexp,-------,-------,-------
-Video,042,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
+Video,042,mathematics,youtube,algebra,How to Solve a 10th-Degree Polynomial | Roots of Unity & Factorization,"English-language, step-by-step derivation of the solutions to P(x)=1+x+x²+x⁴+x⁵+x⁶+x⁸+x⁹+x¹⁰=0. Exponent grouping reveals P(x)=(1+x+x²)(1+x⁴+x⁸)=Φ₃(x)²Φ₆(x)Φ₁₂(x). The presentation explains finite geometric sums, roots of unity, root multiplicities, real and rational factorizations, and the geometric interpretation on the complex unit circle. The polynomial has eight distinct nonreal roots: six simple roots and two double roots (ten when counted with multiplicity). The video uses 15 narrated English Beamer slides, with one-second pauses between slides.
+
+Research paper: A Tenth-Degree Polynomial Equation: Factorization, Roots of Unity, and Cyclotomic Polynomials
+https://dx.doi.org/10.2139/ssrn.7604359
+GitHub project: https://github.com/ozsp12/youtube_dr_olsp/tree/main/videos/042_math_algebra_polynomial_equation_10th_degree_revisited
+SymPy verification module: https://github.com/ozsp12/youtube_dr_olsp/blob/main/videos/042_math_algebra_polynomial_equation_10th_degree_revisited/verify_polynomial_10th_degree.py
+Jupyter notebook (theory, LaTeX formulas, symbolic verification): https://github.com/ozsp12/youtube_dr_olsp/blob/main/videos/042_math_algebra_polynomial_equation_10th_degree_revisited/verify_polynomial_10th_degree.ipynb
+English Beamer source: https://github.com/ozsp12/youtube_dr_olsp/blob/main/videos/042_math_algebra_polynomial_equation_10th_degree_revisited/beamer/polynomial_10th_degree_beamer.tex
+
+CHAPTERS
+00:00 Introduction: The tenth-degree polynomial equation
+00:47 An elementary approach to factorization
+01:34 Solving the two polynomial factors
+02:32 Identifying repeated roots and multiplicities
+03:24 Understanding the structure of the exponents
+04:23 Finite geometric series and polynomial identities
+05:27 Roots of unity and the complex unit circle
+06:20 Counting root multiplicities
+07:17 Geometric representation of the complex roots
+08:13 Verification using the fourth-power substitution
+09:10 Factorization over the real numbers
+10:07 Factorization over the rational numbers
+11:00 Monic and cyclotomic polynomials
+11:58 Final solution and generalization
+12:57 References and further reading
+
+#Mathematics #Polynomials #RootsOfUnity",,00:13:41,,ready,1,0,0,0,0,0,0,0,1,0,0,0,https://dx.doi.org/10.2139/ssrn.7604359,-------,-------,-------,-------,-------,-------,-------,https://github.com/ozsp12/youtube_dr_olsp/tree/main/videos/042_math_algebra_polynomial_equation_10th_degree_revisited,-------,-------,-------
 Video,043,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
 Video,044,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
 Video,045,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
