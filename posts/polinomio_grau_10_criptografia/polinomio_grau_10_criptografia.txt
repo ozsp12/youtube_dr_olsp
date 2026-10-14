@@ -1,0 +1,135 @@
+De uma equação do décimo grau à criptografia pós-quântica: raízes da unidade, polinômios ciclotômicos e anéis quocientes
+
+Em meu artigo A Tenth-Degree Polynomial Equation: Factorization, Roots of Unity, and Cyclotomic Polynomials [1], investigo métodos de fatoração, raízes complexas, multiplicidades, polinômios recíprocos e generalizações envolvendo somas geométricas finitas. O problema começa com
+
+P(x) = 1 + x + x² + x⁴ + x⁵ + x⁶ + x⁸ + x⁹ + x¹⁰.
+
+A organização dos expoentes permite escrever
+
+P(x) = (1 + x + x²) + x⁴(1 + x + x²) + x⁸(1 + x + x²),
+
+P(x) = (1 + x + x²)(1 + x⁴ + x⁸).
+
+Para qualquer inteiro positivo m, definimos
+
+Sₘ(x) = 1 + x + ⋯ + xᵐ⁻¹,
+
+(x − 1)Sₘ(x) = xᵐ − 1.
+
+Consequentemente,
+
+P(x) = S₃(x)S₃(x⁴),
+
+(1 − x)(1 − x⁴)P(x) = (1 − x³)(1 − x¹²).
+
+Essa identidade relaciona as soluções às raízes da unidade. Uma raiz primitiva de ordem n satisfaz ζⁿ = 1 e pode ser escrita como
+
+ζ = exp(2πik/n),
+
+com mdc(k,n) = 1. A decomposição ciclotômica [2] estabelece
+
+xⁿ − 1 = ∏ Φ_d(x), em que d percorre os divisores de n.
+
+No problema original,
+
+P(x) = Φ₃(x)² Φ₆(x) Φ₁₂(x),
+
+Φ₃(x) = x² + x + 1,
+
+Φ₆(x) = x² − x + 1,
+
+Φ₁₂(x) = x⁴ − x² + 1.
+
+Como grau(Φₙ) = φ(n), temos
+
+2 × 2 + 2 + 4 = 10.
+
+O polinômio possui oito raízes distintas: seis simples e duas duplas. As raízes múltiplas satisfazem P(α) = P'(α) = 0, e sua identificação decorre de
+
+mdc(P(x), P'(x)) = Φ₃(x).
+
+O polinômio também apresenta simetria recíproca:
+
+P(x) = x¹⁰ P(1/x).
+
+Com a substituição
+
+y = x + 1/x,
+
+definimos os polinômios
+
+Vₙ(y) = xⁿ + x⁻ⁿ,
+
+V₀(y) = 2,
+
+V₁(y) = y,
+
+Vₙ₊₁(y) = yVₙ(y) − Vₙ₋₁(y),
+
+Vₙ(y) = 2Tₙ(y/2).
+
+Essa relação com os polinômios de Chebyshev [3] permite reduzir o grau da equação:
+
+P(x) = x⁵ Q(x + 1/x),
+
+Q(y) = y⁵ + y⁴ − 4y³ − 4y² + 3y + 3,
+
+Q(y) = (y + 1)²(y − 1)(y² − 3).
+
+As soluções são obtidas pela equação x² − yx + 1 = 0. Podemos ainda generalizar a fatoração para inteiros m ≥ 2 e b ≥ 1:
+
+Pₘ,ᵦ(x) = Sₘ(x)Sₘ(xᵇ),
+
+grau(Pₘ,ᵦ) = (m − 1)(b + 1),
+
+N₂ = m − mdc(m,b),
+
+N_distintas = b(m − 1) + mdc(m,b) − 1.
+
+Para m = 3 e b = 4, encontramos duas raízes duplas e oito raízes distintas. Essas fórmulas resultam da contagem das raízes comuns dos fatores, considerando xᵐ = 1, xᵐᵇ = 1 e xᵇ ≠ 1.
+
+A conexão com a criptografia se manifesta na utilização de estruturas polinomiais em problemas computacionais. O Learning With Errors (LWE), estudado por Regev [4], considera relações perturbadas por erros:
+
+b = As + e (mod q).
+
+Sua variante Ring Learning With Errors (Ring-LWE), desenvolvida por Lyubashevsky, Peikert e Regev [5], utiliza anéis associados a extensões ciclotômicas:
+
+R = ℤ[X]/(Φₙ(X)),
+
+R_q = R/qR.
+
+O esquema CRYSTALS-Kyber [6], padronizado como ML-KEM pelo NIST [7], utiliza o problema Module-LWE e operações no anel
+
+R_q = ℤ_q[X]/(X²⁵⁶ + 1), com q = 3329.
+
+Nesse caso,
+
+X²⁵⁶ + 1 = Φ₅₁₂(X),
+
+X²⁵⁶ = −1, no anel quociente.
+
+A Number-Theoretic Transform (NTT), relacionada às transformadas rápidas em corpos finitos [8], acelera a multiplicação de polinômios. Módulo 3329, o número 17 possui ordem multiplicativa 256, e a decomposição utilizada envolve 128 fatores quadráticos. As raízes da unidade empregadas nesse contexto pertencem a um corpo finito, enquanto as investigadas no artigo pertencem aos complexos. A conexão é algébrica, e a segurança criptográfica depende de hipóteses computacionais adicionais.
+
+O artigo tem finalidade matemática e pedagógica. Para complementar as demonstrações, disponibilizei um módulo Python [9] e um Jupyter Notebook [10] com verificações simbólicas em SymPy, abrangendo identidades, fatorações, multiplicidades e famílias parametrizadas de polinômios.
+
+Referências
+
+[1] Santos-Pereira, *A Tenth-Degree Polynomial Equation*. https://doi.org/10.2139/ssrn.7604359
+
+[2] Washington (1997), *Introduction to Cyclotomic Fields*. https://doi.org/10.1007/978-1-4612-1934-7
+
+[3] NIST DLMF, §18.5. https://dlmf.nist.gov/18.5
+
+[4] Regev (2009), *Journal of the ACM*. https://doi.org/10.1145/1568318.1568324
+
+[5] Lyubashevsky, Peikert & Regev (2013), *Journal of the ACM*. https://doi.org/10.1145/2535925
+
+[6] Bos et al. (2018), *CRYSTALS-Kyber*. https://doi.org/10.1109/EuroSP.2018.00032
+
+[7] NIST (2024), *FIPS 203*. https://doi.org/10.6028/NIST.FIPS.203
+
+[8] Pollard (1971), *Mathematics of Computation*. https://doi.org/10.1090/S0025-5718-1971-0301966-0
+
+[9] Módulo Python: https://github.com/ozsp12/youtube_dr_olsp/blob/main/videos/042_math_algebra_polynomial_equation_10th_degree_revisited/verify_polynomial_10th_degree.py
+
+[10] Jupyter Notebook: https://github.com/ozsp12/youtube_dr_olsp/blob/main/videos/042_math_algebra_polynomial_equation_10th_degree_revisited/verify_polynomial_10th_degree.ipynb
