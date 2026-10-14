@@ -1,0 +1,179 @@
+## Slide 1 — Apresentação do problema
+
+Neste vídeo, vamos resolver uma equação polinomial do décimo grau utilizando uma técnica de fatoração relativamente simples. Embora equações de grau elevado possam parecer difíceis de resolver, algumas apresentam estruturas algébricas que permitem reduzir consideravelmente sua complexidade.
+
+Nosso objetivo será identificar todas as raízes complexas da equação, determinar suas multiplicidades e compreender a distribuição dessas soluções no plano complexo.
+
+Ao longo da resolução, veremos como o agrupamento de termos, a fórmula de Bhaskara e a representação exponencial dos números complexos permitem obter a solução completa do problema.
+
+## Slide 2 — A equação original
+
+Considere a seguinte equação polinomial:
+
+Um mais x, mais x ao quadrado, mais x elevado à quarta potência, mais x elevado à quinta potência, mais x elevado à sexta potência, mais x elevado à oitava potência, mais x elevado à nona potência, mais x elevado à décima potência, igual a zero.
+
+Estamos diante de uma equação do décimo grau, pois o maior expoente da variável é dez.
+
+Pelo Teorema Fundamental da Álgebra, sabemos que esse polinômio possui exatamente dez raízes complexas, considerando as multiplicidades. Isso não significa, necessariamente, que existam dez soluções distintas.
+
+Antes de tentar resolver a equação, observe um detalhe importante: os termos x ao cubo e x elevado à sétima potência não aparecem na expressão.
+
+Essa ausência sugere uma organização particular dos expoentes, que exploraremos para encontrar uma fatoração.
+
+## Slide 3 — Passo 1: Agrupamento dos termos
+
+A primeira etapa consiste em reorganizar o polinômio em três grupos.
+
+O primeiro grupo contém um mais x mais x ao quadrado.
+
+O segundo contém x elevado à quarta potência, mais x elevado à quinta potência, mais x elevado à sexta potência.
+
+O terceiro contém x elevado à oitava potência, mais x elevado à nona potência, mais x elevado à décima potência.
+
+Agora, podemos colocar x elevado à quarta potência em evidência no segundo grupo e x elevado à oitava potência em evidência no terceiro.
+
+Observe o resultado: os três grupos passam a conter exatamente o mesmo fator, um mais x mais x ao quadrado.
+
+Esse procedimento é importante porque identifica uma estrutura comum entre expressões que, inicialmente, pareciam independentes.
+
+Podemos, portanto, realizar uma segunda fatoração, colocando esse polinômio quadrático em evidência.
+
+## Slide 4 — Passo 2: Fatoração do termo comum
+
+Após o agrupamento, encontramos a seguinte fatoração:
+
+Um mais x mais x ao quadrado, multiplicado por um mais x elevado à quarta potência mais x elevado à oitava potência, igual a zero.
+
+Essa igualdade representa uma redução significativa da complexidade do problema.
+
+A equação original, de grau dez, foi transformada em um produto de dois polinômios: um de segundo grau e outro de oitavo grau.
+
+A fatoração é uma identidade algébrica. Isso significa que o produto desses dois fatores reproduz exatamente todos os termos do polinômio original.
+
+Agora podemos utilizar uma propriedade fundamental dos números complexos: se o produto de dois números é igual a zero, então pelo menos um desses números deve ser zero.
+
+Assim, podemos resolver separadamente as equações correspondentes aos dois fatores.
+
+## Slide 5 — Separação em dois casos
+
+A propriedade do produto nulo permite dividir nossa resolução em dois casos.
+
+No primeiro caso, precisamos resolver a equação um mais x mais x ao quadrado, igual a zero.
+
+Trata-se de uma equação do segundo grau, que pode ser resolvida diretamente pela fórmula de Bhaskara.
+
+No segundo caso, temos um mais x elevado à quarta potência mais x elevado à oitava potência, igual a zero.
+
+Embora essa segunda equação seja de oitavo grau, seus expoentes apresentam uma regularidade que permite transformá-la em uma equação quadrática por meio de uma substituição de variável.
+
+É importante observar que os dois casos não precisam produzir conjuntos de raízes diferentes. Uma mesma solução pode satisfazer simultaneamente as duas equações e, nesse caso, aparecerá como uma raiz múltipla do polinômio original.
+
+## Slide 6 — Resolvendo o primeiro caso
+
+Vamos começar pela equação do segundo grau:
+
+x ao quadrado mais x mais um, igual a zero.
+
+Aplicando a fórmula de Bhaskara, temos os coeficientes a igual a um, b igual a um e c igual a um.
+
+O discriminante é b ao quadrado menos quatro a c. Substituindo os coeficientes, encontramos um menos quatro, que resulta em menos três.
+
+Como o discriminante é negativo, as soluções não pertencem ao conjunto dos números reais.
+
+No conjunto dos números complexos, obtemos duas soluções:
+
+x igual a menos um, mais ou menos i vezes a raiz quadrada de três, dividido por dois.
+
+Essas duas soluções são conjugadas complexas. Ambas possuem módulo igual a um e correspondem às raízes cúbicas não triviais da unidade.
+
+Na forma exponencial, seus argumentos são dois pi sobre três e quatro pi sobre três.
+
+Portanto, o primeiro fator fornece duas raízes complexas distintas.
+
+## Slide 7 — Resolvendo o segundo caso
+
+Vamos agora resolver a equação:
+
+x elevado à oitava potência mais x elevado à quarta potência mais um, igual a zero.
+
+O ponto central consiste em observar que x elevado à oitava potência é o quadrado de x elevado à quarta potência.
+
+Assim, podemos realizar a substituição t igual a x elevado à quarta potência.
+
+Com essa substituição, a equação original se transforma em t ao quadrado mais t mais um, igual a zero.
+
+Observe que essa é exatamente a mesma equação quadrática resolvida no primeiro caso, mas agora escrita em função da variável t.
+
+Consequentemente, encontramos dois valores possíveis para t: menos um, mais ou menos i vezes a raiz quadrada de três, dividido por dois.
+
+Precisamos, então, recuperar os valores de x que satisfazem x elevado à quarta potência igual a cada um desses resultados.
+
+Como ambos os valores de t são diferentes de zero, cada um possui quatro raízes quartas complexas distintas.
+
+Obtemos, portanto, oito raízes distintas para o segundo fator.
+
+Entretanto, duas dessas raízes também satisfazem a equação do primeiro caso. Isso será fundamental para determinar corretamente o número de soluções distintas da equação original.
+
+## Slide 8 — As raízes na forma exponencial de Euler
+
+Podemos organizar as soluções utilizando a representação exponencial de Euler, na qual um número complexo de módulo um é escrito como a exponencial de i vezes um ângulo.
+
+Comecemos pelas raízes duplas.
+
+A primeira é a exponencial de i vezes dois pi sobre três.
+
+A segunda é a exponencial de i vezes quatro pi sobre três.
+
+Esses dois números são as raízes que aparecem simultaneamente nos dois fatores da equação original. Cada um possui, portanto, multiplicidade dois.
+
+As outras seis soluções são raízes simples.
+
+Seus argumentos são pi sobre seis, pi sobre três, cinco pi sobre seis, sete pi sobre seis, cinco pi sobre três e onze pi sobre seis.
+
+Todas essas soluções pertencem ao círculo unitário do plano complexo.
+
+Observe que encontramos oito números complexos distintos. Contudo, como duas soluções possuem multiplicidade dois, o número total de raízes, quando consideradas as multiplicidades, é dez.
+
+Esse resultado está de acordo com o Teorema Fundamental da Álgebra.
+
+## Slide 9 — Interpretação geométrica das soluções
+
+Vamos interpretar geometricamente os resultados anteriores.
+
+O diagrama apresenta o plano complexo, com o eixo horizontal representando a parte real e o eixo vertical representando a parte imaginária.
+
+A circunferência desenhada possui raio um e está centrada na origem. Ela representa o círculo unitário.
+
+As soluções do nosso polinômio estão distribuídas sobre essa circunferência, em posições correspondentes a determinados múltiplos de pi sobre seis.
+
+Os seis pontos destacados em laranja representam as raízes simples.
+
+Os dois pontos destacados em azul, com uma circunferência adicional ao seu redor, representam as raízes duplas, localizadas nos ângulos dois pi sobre três e quatro pi sobre três.
+
+Os quatro pontos vazados, situados sobre os eixos coordenados, representam os números um, menos um, i e menos i. Esses números não são raízes do polinômio.
+
+Observe também a simetria do conjunto de soluções em relação ao eixo real.
+
+Essa simetria decorre de uma propriedade dos polinômios com coeficientes reais: sempre que um número complexo não real é raiz, seu conjugado também é raiz e possui a mesma multiplicidade.
+
+O diagrama permite, portanto, visualizar simultaneamente a localização, a multiplicidade e a simetria das soluções.
+
+## Slide 10 — Resultado final
+
+Concluímos a resolução da nossa equação polinomial do décimo grau.
+
+A técnica fundamental foi reconhecer um padrão nos expoentes e agrupar os termos de maneira que surgisse um fator comum.
+
+Com isso, transformamos o problema inicial em duas equações mais simples, resolvidas por meio da fórmula de Bhaskara e de uma substituição de variável.
+
+Encontramos duas raízes no primeiro fator e oito raízes no segundo. Entretanto, as duas raízes do primeiro fator já estavam presentes no conjunto de soluções do segundo.
+
+Portanto, o polinômio possui oito raízes complexas distintas: seis simples e duas duplas.
+
+Contando as multiplicidades, obtemos exatamente dez raízes, como exige o Teorema Fundamental da Álgebra.
+
+Esse problema ilustra uma ideia importante no estudo da matemática: antes de recorrer a procedimentos mais complexos, vale a pena investigar a estrutura algébrica da expressão.
+
+Muitas vezes, reconhecer um padrão permite transformar uma equação aparentemente difícil em um problema elementar.
+
+Obrigado por acompanhar esta resolução.
