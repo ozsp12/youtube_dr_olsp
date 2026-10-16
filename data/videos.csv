@@ -681,7 +681,14 @@ CHAPTERS
 12:57 References and further reading
 
 #Mathematics #Polynomials #RootsOfUnity",,00:13:41,,ready,1,0,0,0,0,0,0,0,1,0,0,0,https://dx.doi.org/10.2139/ssrn.7604359,-------,-------,-------,-------,-------,-------,-------,https://github.com/ozsp12/youtube_dr_olsp/tree/main/videos/042_math_algebra_polynomial_equation_10th_degree_revisited,-------,-------,-------
-Video,043,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
+Video,043,mathematics,youtube,Álgebra,Resolvendo uma equação polinomial do 10º grau | Fatoração e raízes da unidade,"Resolução, em português, da equação polinomial P(x)=1+x+x²+x⁴+x⁵+x⁶+x⁸+x⁹+x¹⁰=0. A fatoração P(x)=(1+x+x²)(1+x⁴+x⁸) conduz à descrição das raízes complexas, das raízes da unidade e dos polinômios ciclotômicos: P(x)=Φ₃(x)²Φ₆(x)Φ₁₂(x). O vídeo discute o procedimento algébrico e a multiplicidade das raízes.
+
+Produção: as fórmulas, as demonstrações e o roteiro foram preparados pelo autor. O ChatGPT auxiliou na preparação dos slides em LaTeX Beamer e na sincronização da apresentação com a narração; os arquivos de áudio foram gerados com ElevenLabs a partir do roteiro escrito pelo autor. O vídeo final foi publicado no YouTube.
+
+Artigo relacionado: https://dx.doi.org/10.2139/ssrn.7604359
+Projeto e materiais complementares: https://github.com/ozsp12/youtube_dr_olsp/tree/main/videos/042_math_algebra_polynomial_equation_10th_degree_revisited
+Verificação simbólica: https://github.com/ozsp12/youtube_dr_olsp/blob/main/videos/042_math_algebra_polynomial_equation_10th_degree_revisited/verify_polynomial_10th_degree.py
+Jupyter notebook: https://github.com/ozsp12/youtube_dr_olsp/blob/main/videos/042_math_algebra_polynomial_equation_10th_degree_revisited/verify_polynomial_10th_degree.ipynb",,,eKKMNxK6ExM,published,1,0,0,1,0,0,0,0,1,0,0,0,https://dx.doi.org/10.2139/ssrn.7604359,-------,-------,https://www.youtube.com/watch?v=eKKMNxK6ExM,-------,-------,-------,-------,https://github.com/ozsp12/youtube_dr_olsp/tree/main/videos/042_math_algebra_polynomial_equation_10th_degree_revisited,-------,-------,-------
 Video,044,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
 Video,045,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
 Video,046,,,,,,,,,,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,nd,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------,-------
