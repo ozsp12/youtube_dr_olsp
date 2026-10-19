@@ -1,8 +1,45 @@
 # youtube_dr_olsp
 
-## Researcher
+Repository of teaching materials, computational projects, scripts, presentations, references, and resources associated with the [Dr. Osvaldo L. Santos-Pereira](https://www.youtube.com/@ozlsp12) YouTube channel. The content focuses mainly on physics, mathematics, data science, artificial intelligence, and scientific computing, bringing together both published materials and projects under development.
+
+## About the author
 
 **Osvaldo L. Santos-Pereira**
+
+I hold a PhD in Physics from the Federal University of Rio de Janeiro (UFRJ), as well as MSc and BSc degrees in Physics from the University of Campinas (Unicamp). I also hold an MSc-equivalent postgraduate degree in Data Science and Analytics from the University of São Paulo (MBA USP-ESALQ) and a postgraduate specialization in Quantum Computing from SENAI-CIMATEC. I am currently a collaborating researcher at the Physics Institute of UFRJ and work in the private sector as a data science consultant and artificial intelligence specialist.
+
+My research and technical work span General Relativity, warp drive theory, cosmology, econophysics, mathematical and computational physics, statistical methods, data science, artificial intelligence, scientific computing, and science communication. This repository collects part of my educational work and the computational materials associated with my YouTube channel.
+
+## Repository structure
+
+```text
+youtube_dr_olsp/
+├── README.md
+├── backlog/
+│   └── projects, ideas, references, and materials still under development
+├── data/
+│   ├── videos.csv
+│   └── shorts.csv
+├── posts/
+│   └── materials associated with posts and complementary publications
+├── shorts/
+│   └── projects and files used in the production of short-form videos
+└── videos/
+    └── projects and files used in the production of the main videos
+```
+
+Content directories follow, whenever possible, a naming convention based on a numeric identifier followed by the subject area and topic, for example:
+
+```text
+videos/044_phys_mechanics_jump_time_in_air/
+shorts/024_somatoria_fx/
+```
+
+Each project may contain, as needed, scripts, Jupyter notebooks, source code, LaTeX files, PDFs, presentations, images, animations, narration files, references, and other materials used in content production.
+
+The `data/videos.csv` and `data/shorts.csv` files act as structured content indexes, collecting editorial metadata, publication status, and links to YouTube, GitHub, and other platforms when available.
+
+## Contact and profiles
 
 <a href="mailto:olsp@if.ufrj.br"><img src="https://api.iconify.design/mdi:email.svg?color=%23888888" height="22" alt="Email" align="absmiddle"></a> **Email:** [olsp@if.ufrj.br](mailto:olsp@if.ufrj.br)  
 <a href="https://ozsp12.github.io/"><img src="https://api.iconify.design/mdi:web.svg?color=%23888888" height="22" alt="Academic webpage" align="absmiddle"></a> **Academic webpage:** [https://ozsp12.github.io/](https://ozsp12.github.io/)  
