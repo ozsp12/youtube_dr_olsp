@@ -1,0 +1,81 @@
+# Roteiro — Física do salto vertical
+
+## Slide 1 — Pergunta-problema
+Vamos começar com uma pergunta simples.
+Quão alto uma pessoa precisa pular para permanecer exatamente um segundo no ar?
+Vamos considerar um salto vertical, em que a pessoa sai do solo e retorna à mesma altura.
+Nosso objetivo será relacionar o tempo total de voo com a altura máxima atingida.
+
+## Slide 2 — Modelo físico
+Para resolver o problema, vamos construir um modelo físico idealizado.
+Desprezamos a resistência do ar e consideramos a aceleração da gravidade constante.
+A pessoa parte da posição y igual a zero, com velocidade inicial v zero dirigida para cima, e retorna posteriormente à mesma altura.
+Nessas condições, o movimento é uniformemente acelerado.
+
+## Slide 3 — Equação do movimento
+A posição vertical em função do tempo é dada pela equação:
+y de t igual a v zero vezes t, menos um meio de g vezes t ao quadrado.
+O primeiro termo representa o efeito da velocidade inicial.
+O segundo representa a ação da gravidade.
+Como a aceleração aponta para baixo, a posição aumenta inicialmente, atinge um máximo e depois diminui.
+
+## Slide 4 — Tempo total de voo
+Agora vamos usar o tempo total de voo, que chamaremos de T.
+No instante inicial, y de zero é igual a zero.
+Quando a pessoa retorna ao solo, no instante T, temos novamente y de T igual a zero.
+Substituindo isso na equação do movimento e simplificando, encontramos um resultado importante:
+v zero é igual a g vezes T, dividido por dois.
+
+## Slide 5 — Simetria do movimento
+Existe uma simetria simples neste movimento.
+Durante a subida, a velocidade vertical é positiva.
+No ponto mais alto, ela se torna zero.
+Depois, durante a descida, torna-se negativa.
+Como a partida e a chegada ocorrem na mesma altura, o tempo de subida é exatamente igual ao tempo de descida.
+Cada etapa dura T sobre dois.
+
+## Slide 6 — Ponto mais alto
+O ponto mais alto ocorre quando a velocidade vertical se anula.
+A velocidade é dada por:
+v de t igual a v zero menos g vezes t.
+Igualando essa expressão a zero, obtemos:
+t máximo igual a v zero dividido por g.
+Como já sabemos que v zero é igual a g vezes T sobre dois, concluímos que o ponto mais alto ocorre exatamente em T sobre dois.
+
+## Slide 7 — Fórmula geral da altura
+Agora podemos calcular a altura máxima.
+Basta avaliar a posição no instante T sobre dois.
+Substituímos esse tempo na equação da posição e também usamos o resultado v zero igual a g vezes T sobre dois.
+Depois de simplificar os termos, obtemos a expressão central do problema:
+h de T é igual a g vezes T ao quadrado, dividido por oito.
+
+## Slide 8 — Caso particular: um segundo no ar
+Vamos aplicar a fórmula ao caso inicial.
+Tomamos g aproximadamente igual a nove vírgula oitenta e um metros por segundo ao quadrado e T igual a um segundo.
+Assim, h é igual a nove vírgula oitenta e um dividido por oito.
+O resultado é aproximadamente um vírgula vinte e três metros.
+Portanto, para permanecer um segundo no ar, o centro de massa precisa subir cerca de um vírgula vinte e três metros.
+
+## Slide 9 — Interpretação física
+O resultado mostra uma característica importante.
+A altura necessária cresce com o quadrado do tempo de voo.
+Se o tempo dobra, a altura necessária quadruplica.
+Meio segundo no ar corresponde a aproximadamente zero vírgula trinta e um metro.
+Um segundo corresponde a aproximadamente um vírgula vinte e três metros.
+E dois segundos exigiriam aproximadamente quatro vírgula noventa e um metros.
+
+## Slide 10 — Curiosidade: os maiores saltos verticais
+Para colocar esse resultado em perspectiva, podemos comparar com alguns dos maiores saltos verticais já registrados.
+As marcas mais recentes já ultrapassaram um vírgula trinta metro.
+Darius Clark atingiu aproximadamente um vírgula trinta e cinco metro.
+Ethan Pimstone alcançou aproximadamente um vírgula trinta e três metro.
+Dylan McCarthy chegou a aproximadamente um vírgula trinta e dois metro.
+Essas marcas estão muito próximas, ou até acima, da altura necessária para permanecer cerca de um segundo no ar em nosso modelo idealizado.
+
+## Slide 11 — Menção honrosa
+Como menção honrosa, é impossível falar de “hang time” no basquete sem mencionar Michael Jordan. Seu salto mais famoso ocorreu no Slam Dunk Contest de 1988, em Chicago, quando partiu da linha do lance livre. O salto vertical de Michael Jordan de 48 polegadas, ou seja, de quase 122 centímetros, não corresponde a uma medição oficial daquele salto; por isso, não entrou na lista oficial de recordes. Análises didáticas estimam o tempo de voo de Michael Jordan em cerca de 0,92 s.
+
+## Slide 12 — Bibliografia
+
+Os conceitos utilizados nesta análise são clássicos da mecânica: lançamento vertical, queda livre, movimento uniformemente variado e tempo de voo.
+Para aprofundar o tema, boas referências são Fundamentos de Física, de Halliday, Resnick e Walker; Princípios de Física, de Serway e Jewett; Física para Cientistas e Engenheiros, de Tipler e Mosca; e o Curso de Física Básica, de Moyses Nussenzveig.

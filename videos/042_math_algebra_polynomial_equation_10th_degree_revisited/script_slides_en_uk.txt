@@ -10,7 +10,7 @@ The first step is to group the terms without changing the polynomial. There are 
 
 ## Slide 3 — Solving the Two Factors
 
-A product is zero when at least one of its factors is zero, so we can study the factors separately. The first is one plus x plus x squared. The quadratic formula gives two nonreal solutions: negative one plus or minus i times the square root of three, all divided by two. These are the primitive cube roots of unity, conventionally denoted omega and omega squared. For the second factor, set t equal to x to the fourth. The equation becomes one plus t plus t squared equal to zero, so t is omega or omega squared. Each of these two values has four distinct fourth roots. In polar notation, their arguments are plus or minus pi over six, plus k times pi over two, where k runs from zero through three. The second factor therefore has eight distinct roots.
+A product is zero when at least one of its factors is zero, so we can study the factors separately. The first is one plus x plus x squared. The quadratic formula gives two nonreal solutions: negative one plus or minus i times the square root of three, all divided by two. These are the primitive cube roots of unity, conventionally denoted omega and omega squared. For the second factor, set U equal to x to the fourth. The equation becomes one plus U plus U squared equal to zero, so U is omega or omega squared. Each of these two values has four distinct fourth roots. In polar notation, their arguments are plus or minus pi over six, plus k times pi over two, where k runs from zero through three. The second factor therefore has eight distinct roots.
 
 ## Slide 4 — The Repeated Roots Appear
 
