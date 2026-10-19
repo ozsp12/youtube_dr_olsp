@@ -1,45 +1,45 @@
 # youtube_dr_olsp
 
-Repositório de materiais didáticos, projetos computacionais, roteiros, apresentações, referências e recursos associados ao canal [Dr. Osvaldo L. Santos-Pereira](https://www.youtube.com/@ozlsp12) no YouTube. O conteúdo cobre principalmente física, matemática, ciência de dados, inteligência artificial e computação científica, reunindo tanto materiais já publicados quanto projetos em desenvolvimento.
+Repository of teaching materials, computational projects, scripts, presentations, references, and resources associated with the [Dr. Osvaldo L. Santos-Pereira](https://www.youtube.com/@ozlsp12) YouTube channel. The content focuses mainly on physics, mathematics, data science, artificial intelligence, and scientific computing, bringing together both published materials and projects under development.
 
-## Sobre o autor
+## About the author
 
 **Osvaldo L. Santos-Pereira**
 
-Sou doutor em Física pela Universidade Federal do Rio de Janeiro (UFRJ), mestre e bacharel em Física pela Universidade Estadual de Campinas (Unicamp), mestre em Data Science e Analytics pela Universidade de São Paulo (MBA USP-ESALQ) e pós-graduado em Computação Quântica pelo SENAI-CIMATEC. Atualmente, sou pesquisador colaborador no Instituto de Física da UFRJ e atuo no setor privado como consultor em ciência de dados e especialista em inteligência artificial.
+I hold a PhD in Physics from the Federal University of Rio de Janeiro (UFRJ), as well as MSc and BSc degrees in Physics from the University of Campinas (Unicamp). I also hold an MSc-equivalent postgraduate degree in Data Science and Analytics from the University of São Paulo (MBA USP-ESALQ) and a postgraduate specialization in Quantum Computing from SENAI-CIMATEC. I am currently a collaborating researcher at the Physics Institute of UFRJ and work in the private sector as a data science consultant and artificial intelligence specialist.
 
-Minha pesquisa e produção técnica abrangem Relatividade Geral, teoria de warp drive, cosmologia, econofísica, física matemática e computacional, métodos estatísticos, ciência de dados, inteligência artificial, computação científica e comunicação científica. Este repositório reúne parte da minha produção didática e dos materiais computacionais associados ao canal no YouTube.
+My research and technical work span General Relativity, warp drive theory, cosmology, econophysics, mathematical and computational physics, statistical methods, data science, artificial intelligence, scientific computing, and science communication. This repository collects part of my educational work and the computational materials associated with my YouTube channel.
 
-## Estrutura do repositório
+## Repository structure
 
 ```text
 youtube_dr_olsp/
 ├── README.md
 ├── backlog/
-│   └── projetos, ideias, referências e materiais ainda em desenvolvimento
+│   └── projects, ideas, references, and materials still under development
 ├── data/
 │   ├── videos.csv
 │   └── shorts.csv
 ├── posts/
-│   └── materiais associados a posts e publicações complementares
+│   └── materials associated with posts and complementary publications
 ├── shorts/
-│   └── projetos e arquivos utilizados na produção de vídeos curtos
+│   └── projects and files used in the production of short-form videos
 └── videos/
-    └── projetos e arquivos utilizados na produção dos vídeos principais
+    └── projects and files used in the production of the main videos
 ```
 
-Os diretórios de conteúdo seguem, sempre que possível, uma convenção de nomes baseada em um identificador numérico seguido pela área e pelo tema do material, por exemplo:
+Content directories follow, whenever possible, a naming convention based on a numeric identifier followed by the subject area and topic, for example:
 
 ```text
 videos/044_phys_mechanics_jump_time_in_air/
 shorts/024_somatoria_fx/
 ```
 
-Cada projeto pode conter, conforme a necessidade, roteiros, notebooks Jupyter, código-fonte, arquivos LaTeX, PDFs, apresentações, imagens, animações, narrações, referências e outros materiais utilizados na preparação do conteúdo.
+Each project may contain, as needed, scripts, Jupyter notebooks, source code, LaTeX files, PDFs, presentations, images, animations, narration files, references, and other materials used in content production.
 
-Os arquivos `data/videos.csv` e `data/shorts.csv` funcionam como índices estruturados do conteúdo, reunindo metadados editoriais, status de publicação e links para YouTube, GitHub e outras plataformas quando disponíveis.
+The `data/videos.csv` and `data/shorts.csv` files act as structured content indexes, collecting editorial metadata, publication status, and links to YouTube, GitHub, and other platforms when available.
 
-## Contato e perfis
+## Contact and profiles
 
 <a href="mailto:olsp@if.ufrj.br"><img src="https://api.iconify.design/mdi:email.svg?color=%23888888" height="22" alt="Email" align="absmiddle"></a> **Email:** [olsp@if.ufrj.br](mailto:olsp@if.ufrj.br)  
 <a href="https://ozsp12.github.io/"><img src="https://api.iconify.design/mdi:web.svg?color=%23888888" height="22" alt="Academic webpage" align="absmiddle"></a> **Academic webpage:** [https://ozsp12.github.io/](https://ozsp12.github.io/)  
