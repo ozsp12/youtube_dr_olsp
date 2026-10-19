@@ -1,8 +1,45 @@
 # youtube_dr_olsp
 
-## Researcher
+Repositório de materiais didáticos, projetos computacionais, roteiros, apresentações, referências e recursos associados ao canal [Dr. Osvaldo L. Santos-Pereira](https://www.youtube.com/@ozlsp12) no YouTube. O conteúdo cobre principalmente física, matemática, ciência de dados, inteligência artificial e computação científica, reunindo tanto materiais já publicados quanto projetos em desenvolvimento.
+
+## Sobre o autor
 
 **Osvaldo L. Santos-Pereira**
+
+Sou doutor em Física pela Universidade Federal do Rio de Janeiro (UFRJ), mestre e bacharel em Física pela Universidade Estadual de Campinas (Unicamp), mestre em Data Science e Analytics pela Universidade de São Paulo (MBA USP-ESALQ) e pós-graduado em Computação Quântica pelo SENAI-CIMATEC. Atualmente, sou pesquisador colaborador no Instituto de Física da UFRJ e atuo no setor privado como consultor em ciência de dados e especialista em inteligência artificial.
+
+Minha pesquisa e produção técnica abrangem Relatividade Geral, teoria de warp drive, cosmologia, econofísica, física matemática e computacional, métodos estatísticos, ciência de dados, inteligência artificial, computação científica e comunicação científica. Este repositório reúne parte da minha produção didática e dos materiais computacionais associados ao canal no YouTube.
+
+## Estrutura do repositório
+
+```text
+youtube_dr_olsp/
+├── README.md
+├── backlog/
+│   └── projetos, ideias, referências e materiais ainda em desenvolvimento
+├── data/
+│   ├── videos.csv
+│   └── shorts.csv
+├── posts/
+│   └── materiais associados a posts e publicações complementares
+├── shorts/
+│   └── projetos e arquivos utilizados na produção de vídeos curtos
+└── videos/
+    └── projetos e arquivos utilizados na produção dos vídeos principais
+```
+
+Os diretórios de conteúdo seguem, sempre que possível, uma convenção de nomes baseada em um identificador numérico seguido pela área e pelo tema do material, por exemplo:
+
+```text
+videos/044_phys_mechanics_jump_time_in_air/
+shorts/024_somatoria_fx/
+```
+
+Cada projeto pode conter, conforme a necessidade, roteiros, notebooks Jupyter, código-fonte, arquivos LaTeX, PDFs, apresentações, imagens, animações, narrações, referências e outros materiais utilizados na preparação do conteúdo.
+
+Os arquivos `data/videos.csv` e `data/shorts.csv` funcionam como índices estruturados do conteúdo, reunindo metadados editoriais, status de publicação e links para YouTube, GitHub e outras plataformas quando disponíveis.
+
+## Contato e perfis
 
 <a href="mailto:olsp@if.ufrj.br"><img src="https://api.iconify.design/mdi:email.svg?color=%23888888" height="22" alt="Email" align="absmiddle"></a> **Email:** [olsp@if.ufrj.br](mailto:olsp@if.ufrj.br)  
 <a href="https://ozsp12.github.io/"><img src="https://api.iconify.design/mdi:web.svg?color=%23888888" height="22" alt="Academic webpage" align="absmiddle"></a> **Academic webpage:** [https://ozsp12.github.io/](https://ozsp12.github.io/)  
