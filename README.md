@@ -1,6 +1,10 @@
-# youtube_dr_olsp
+# Dr. Osvaldo L. Santos-Pereira — YouTube Educational Repository
 
-Repository of teaching materials, computational projects, scripts, presentations, references, and resources associated with the [Dr. Osvaldo L. Santos-Pereira](https://www.youtube.com/@ozlsp12) YouTube channel. The content focuses mainly on physics, mathematics, data science, artificial intelligence, and scientific computing, bringing together both published materials and projects under development.
+## ▶ [YouTube Channel: Dr. Osvaldo L. Santos-Pereira](https://www.youtube.com/@ozlsp12)
+
+**Physics · Mathematics · Data Science · Artificial Intelligence · Scientific Computing**
+
+Official repository for the educational and scientific content published on my YouTube channel. It brings together teaching materials, computational projects, scripts, presentations, references, source files, and supporting resources for published videos, Shorts, and projects under development.
 
 ## About the author
 
